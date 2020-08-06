@@ -1,0 +1,4 @@
+[13:56:45] WSE v2.4.8 by cmpxchg8b (Build date: Jan 20 2012 02:06:14)
+[13:56:45] WSE path: E:\Games\Mount&Blade Warband\Modules\Test - WSE\WSE\
+[13:56:45] WSE netcode version: 5
+[13:56:45] Warband version: vanilla
