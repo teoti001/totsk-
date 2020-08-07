@@ -35,6 +35,8 @@ from module_constants import *
 pilgrim_disguise = [itm_1700_tricorn_b,itm_1700_villager_a,itm_light_dragoon_pistol, itm_pistol_cartridges, itm_rapier_1, itm_civilian_shoes_b ]
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian
 
+##diplomacy begin
+from header_skills import *
 cannons_count = ( ##this might need changing - problematic situation can arrise
   ti_before_mission_start, 0, 0, [(eq,0,1),],
   [

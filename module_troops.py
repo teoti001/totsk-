@@ -6068,6 +6068,29 @@ troops = [
 
 ["troop_file_end","troop_file_end","troop_file_end",tf_hero, 0,0, fac_commoners,[],def_attrib|level(2),wp(20),knows_inventory_management_10,0],
 
+  ##diplomacy begin
+  ["dplmc_chamberlain","Chamberlain Aubrey de Vere", "Chamberlains",tf_hero|tf_male,0,0,fac_commoners,[itm_gentleman_outfit_a,itm_gentleman_wig_c,itm_civilian_shoes_b], def_attrib|level(10), wp(40),knows_inventory_management_10,0x0000000dfc0c238838e571c8d469c91b00000000001e39230000000000000000],
+
+  ["dplmc_constable","Constable Miles de Gloucester","Constables",tf_hero|tf_male,0,0,fac_commoners,[itm_buff_gloves,itm_gentleman_outfit_a,itm_pirate_boots,itm_british_cavalry_sword,itm_black_bicorne_blue_lapel_with_wig],
+   knight_attrib_4,wp_melee(200),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_4|knows_athletics_4,0x0000000b4b1015054b1b4d591cba28d300000000001e472b0000000000000000],
+
+  ["dplmc_chancellor","Chancellor Herfast","Chancellors",tf_hero|tf_male,0,0,fac_commoners,[itm_gentleman_outfit_a,itm_civilian_shoes_b],def_attrib|level(10), wp(40),knows_inventory_management_10, 0x00000009a20c21cf491bad28a28628d400000000001e371a0000000000000000],
+
+  ["dplmc_messenger","Messenger","Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_neutral,
+   [itm_buff_gloves,itm_gentleman_outfit_a,itm_pirate_boots,itm_british_cavalry_sword,itm_black_bicorne_blue_lapel_with_wig],
+   def_attrib|agi_21|int_30|cha_21|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_leadership_7,man_face_young_1,man_face_old_2],
+
+  ["dplmc_scout","Scout","Scouts",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_neutral,
+   [itm_buff_gloves,itm_gentleman_outfit_a,itm_pirate_boots,itm_british_cavalry_sword,itm_black_bicorne_blue_lapel_with_wig],
+   def_attrib|agi_21|int_30|cha_21|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_leadership_7,man_face_young_1,man_face_old_2],
+
+   
+# recruiter kit begin 
+  ["dplmc_recruiter","Recruiter","Recruiter",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_neutral,
+   [itm_buff_gloves,itm_gentleman_outfit_a,itm_pirate_boots,itm_british_cavalry_sword,itm_black_bicorne_blue_lapel_with_wig],
+   def_attrib|agi_21|int_30|cha_21|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_leadership_7,mercenary_face_1,mercenary_face_2],
+# recruiter kit end
+  ##diplomacy end
 
 ]
 

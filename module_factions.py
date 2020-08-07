@@ -69,6 +69,7 @@ factions = [
   ("robber_knights",  "{!}robber_knights", 0, 0.1, [], []),
 
   ("khergits","{!}Khergits", 0, 0.5,[("player_faction",0.0)], []),
+  ("black_khergits","{!}Black Khergits", 0, 0.5,[("player_faction",-0.3),("kingdom_1",-0.02),("kingdom_2",-0.02)], []),																													   
 
   ("manhunters","Police", 0, 0.5,[("outlaws",-0.6),("player_faction",0.1)], []),
   ("deserters","Deserters", 0, 0.5,[("manhunters",-0.6),("merchants",-0.5),("player_faction",-0.1)], [], 0x888888),
@@ -80,6 +81,13 @@ factions = [
   ("peasant_rebels","{!}Peasant Rebels", 0, 1.0,[("noble_refugees",-1.0),("player_faction",-0.4)], []),
   ("noble_refugees","{!}Noble Refugees", 0, 0.5,[], []),
 ]
+
+##diplomacy start+ Define these for convenience
+dplmc_factions_begin = 1 #As mentioned in the notes above, this is hardcoded and shouldn't be altered.  Deliberately excludes "no faction".
+dplmc_non_generic_factions_begin = [x[0] for x in enumerate(factions) if x[1][0] == "merchants"][0] + 1
+dplmc_factions_end   = len(factions)
+##diplomacy end+
+
 # modmerger_start version=201 type=4
 try:
     component_name = "factions"

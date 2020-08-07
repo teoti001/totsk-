@@ -178,5 +178,3 @@ snd_team_scored_a_point = 176
 snd_enemy_scored_a_point = 177
 snd_cannon_shoot = 178
 snd_cannon_explosion = 179
-
-

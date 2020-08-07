@@ -338,7 +338,9 @@ strings = [
   ("s3s_s2", "{s3}'s {s2}"),
   ("s5_is_s51", "{s5} is {s51}."),
   ("s5_is_the_ruler_of_s51", "{s5} is the ruler of {s51}. "),
-  ("s5_is_a_nobleman_of_s6", "{s5} is a nobleman of {s6}. "),
+##diplomacy start+ make gender correct using reg4
+  ("s5_is_a_nobleman_of_s6", "{s5} is a {reg4?noblewoman:nobleman} of {s6}. "),#-- update fix 2011-04-08, ternary was messed up
+##diplomacy end+			
 ##  ("your_debt_to_s1_is_changed_from_reg1_to_reg2", "Your debt to {s1} is changed from {reg1} to {reg2}."),
 
   ("relation_mnus_100", "Vengeful"), # -100..-94
@@ -346,22 +348,40 @@ strings = [
   ("relation_mnus_80",  "Vengeful"),
   ("relation_mnus_70",  "Hateful"),
   ("relation_mnus_60",  "Hateful"),
-  ("relation_mnus_50",  " Hostile"),
-  ("relation_mnus_40",  "  Angry"),
-  ("relation_mnus_30",  "    Resentful"),
-  ("relation_mnus_20",  "      Grumbling"),
-  ("relation_mnus_10",  "        Suspicious"),
-  ("relation_plus_0",   "         Indifferent"),# -5...4
-  ("relation_plus_10",  "          Cooperative"), # 5..14
-  ("relation_plus_20",  "           Welcoming"),
-  ("relation_plus_30",  "            Favorable"),
-  ("relation_plus_40",  "             Supportive"),
-  ("relation_plus_50",  "              Friendly"),
-  ("relation_plus_60",  "               Gracious"),
-  ("relation_plus_70",  "                 Fond"),
-  ("relation_plus_80",  "                  Loyal"),
-  ("relation_plus_90",  "                   Devoted"),
-
+  ##diplomacy start+
+  # What the hell?!  These stupid spaces make otherwise-useful constants unusable.
+  # Changing them to strip out the space padding.
+#  ("relation_mnus_50",  " Hostile"),
+#  ("relation_mnus_40",  "  Angry"),
+#  ("relation_mnus_30",  "    Resentful"),
+#  ("relation_mnus_20",  "      Grumbling"),
+#  ("relation_mnus_10",  "        Suspicious"),
+#  ("relation_plus_0",   "         Indifferent"),# -5...4
+#  ("relation_plus_10",  "          Cooperative"), # 5..14
+#  ("relation_plus_20",  "           Welcoming"),
+#  ("relation_plus_30",  "            Favorable"),
+#  ("relation_plus_40",  "             Supportive"),
+#  ("relation_plus_50",  "              Friendly"),
+#  ("relation_plus_60",  "               Gracious"),
+#  ("relation_plus_70",  "                 Fond"),
+#  ("relation_plus_80",  "                  Loyal"),
+#  ("relation_plus_90",  "                   Devoted"),
+  ("relation_mnus_50",  " Hostile".strip()),
+  ("relation_mnus_40",  "  Angry".strip()),
+  ("relation_mnus_30",  "    Resentful".strip()),
+  ("relation_mnus_20",  "      Grumbling".strip()),
+  ("relation_mnus_10",  "        Suspicious".strip()),
+  ("relation_plus_0",   "         Indifferent".strip()),# -5...4
+  ("relation_plus_10",  "          Cooperative".strip()), # 5..14
+  ("relation_plus_20",  "           Welcoming".strip()),
+  ("relation_plus_30",  "            Favorable".strip()),
+  ("relation_plus_40",  "             Supportive".strip()),
+  ("relation_plus_50",  "              Friendly".strip()),
+  ("relation_plus_60",  "               Gracious".strip()),
+  ("relation_plus_70",  "                 Fond".strip()),
+  ("relation_plus_80",  "                  Loyal".strip()),
+  ("relation_plus_90",  "                   Devoted".strip()),
+  ##diplomacy end+
   ("relation_mnus_100_ns", "{s60} is vengeful towards you."), # -100..-94
   ("relation_mnus_90_ns",  "{s60} is vengeful towards you."),  # -95..-84
   ("relation_mnus_80_ns",  "{s60} is vengeful towards you."),
@@ -369,10 +389,16 @@ strings = [
   ("relation_mnus_60_ns",  "{s60} is hateful towards you."),
   ("relation_mnus_50_ns",  "{s60} is hostile towards you."),
   ("relation_mnus_40_ns",  "{s60} is angry towards you."),
-  ("relation_mnus_30_ns",  "{s60} is resentful against you."),
+  ##diplomacy start+ fix preposition
+  #("relation_mnus_30_ns",  "{s60} is resentful against you."),
+  ("relation_mnus_30_ns",  "{s60} is resentful towards you."),
+  ##diplomacy end+
   ("relation_mnus_20_ns",  "{s60} is grumbling against you."),
   ("relation_mnus_10_ns",  "{s60} is suspicious towards you."),
-  ("relation_plus_0_ns",   "{s60} is indifferent against you."),# -5...4
+  ##diplomacy start+ fix preposition
+  #("relation_plus_0_ns",   "{s60} is indifferent against you."),# -5...4
+  ("relation_plus_0_ns",   "{s60} is indifferent towards you."),# -5...4
+  ##diplomacy end+	  
   ("relation_plus_10_ns",  "{s60} is cooperative towards you."), # 5..14
   ("relation_plus_20_ns",  "{s60} is welcoming towards you."),
   ("relation_plus_30_ns",  "{s60} is favorable to you."),
@@ -1606,7 +1632,19 @@ strings = [
 
 #Beginning of game comments
 ("comment_intro_liege_affiliated", "I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk."),
-
+##diplomacy start+ (documentation only)
+#NOTE:
+#  The comment_* strings below are used with script_lord_comment_to_s43
+#  Some of the suffixes differ from the ones used in the personality codes.  The equivalencies are:
+#     liege       = lrep_none
+#     martial     = lrep_martial
+#     badtempered = lrep_quarrelsome
+#     pitiless    = lrep_selfrighteous
+#     cunning     = lrep_cunning
+#     sadistic    = lrep_debauched
+#     goodnatured = lrep_goodnatured
+#     upstanding  = lrep_upstanding
+##diplomacy end+ (documentation only)
 ("comment_intro_famous_liege", "Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor."),
 ("comment_intro_famous_martial", "Your fame runs before you! Perhaps we shall test each other's valor in a tournament, or on the battlefield!"),
 ("comment_intro_famous_badtempered", "I've heard of you. Well, I'm not one for bandying words, so if you have anything to say, out with it."),
@@ -1636,67 +1674,78 @@ strings = [
 ("comment_intro_common_upstanding", "Peace to you, and always remember to temper your valor with mercy, your courage with honour."),
 
 
+##diplomacy start+
+#Change female intros and rejoiners to be prejudiced against whatever sex the player happens to be
+#(This will be invisible to the player by default, since ordinarily these are never spoken to
+#make players, but it allows a reversal of the convention.  TODO: add documentation of xxx																		  
 
 #famous
-("comment_intro_female_famous_liege", "I have heard much about you. Some men may fear a woman who is versed in the art of war, but I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
-("comment_intro_female_famous_martial", "I have heard much about you. They say that you are the equal of even the bravest of men in your prowess at arms. Perhaps one day I shall try my valor against yours, either in a tournament or on the battlefield!"),
-("comment_intro_female_famous_badtempered", "I've heard of talk of you -- the woman who knows how to fight like a man."),
-("comment_intro_female_famous_pitiless", "I know your name. It strikes fear in men's hearts. That is good. Perhaps we should speak together, some time."),
-("comment_intro_female_famous_cunning", "Ah, yes. At last we meet. You sound like a good woman to know. Let us speak together, from time to time."),
+##dplmc+ changes to include female-to-male versions
+("comment_intro_female_famous_liege", "I have heard much about you. Some {women/men} may fear a {man/woman} who is versed in the art of war, but I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
+("comment_intro_female_famous_martial", "I have heard much about you. They say that you are the equal of even the bravest of {women/men} in your prowess at arms. Perhaps one day I shall try my valor against yours, either in a tournament or on the battlefield!"),
+("comment_intro_female_famous_badtempered", "I've heard of talk of you -- the {man/woman} who knows how to fight like a {woman/man}."),
+("comment_intro_female_famous_pitiless", "I know your name. It strikes fear in {women/men}'s hearts. That is good. Perhaps we should speak together, some time."),
+("comment_intro_female_famous_cunning", "Ah, yes. At last we meet. You sound like a good {man/woman} to know. Let us speak together, from time to time."),
 ("comment_intro_female_famous_sadistic", "I know your name -- and from what I hear, I'll warrant that many a grieving widow knows too. But that is no concern of mine."),
 ("comment_intro_female_famous_goodnatured", "I've heard of you! It's very good to finally make your acquaintance."),
 ("comment_intro_female_famous_upstanding", "I know your name. They say you are a most valiant warrior. I can only hope that your honour and mercy matches your valor."),
 
 
 #aristocratic
-("comment_intro_female_noble_liege", "It is not often that I meet a woman who aspires to lead men into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
-("comment_intro_female_noble_martial", "I do not recognize the device on your banner, but clearly you are a lady of rank. Please consider me your most humble servant."),
+##(... continuing dplmc+ changes to include female-to-male versions ...)
+("comment_intro_female_noble_liege", "It is not often that I meet a {male/woman} who aspires to lead {warriors/men} into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
+("comment_intro_female_noble_martial", "I do not recognize the device on your banner, but clearly you are a {boy/lady} of rank. Please consider me your most humble servant."),
 ("comment_intro_female_noble_badtempered", "I don't recognize the device on that banner. Clearly another foreigner come to our lands, bringing their strange ways."),
-("comment_intro_female_noble_pitiless", "I see that you carry a noble's banner, but I do not recognize the device... You should know, lady, that in Calradia it is the men to ride to war, and if you seek to overturn the natural order of things, you will find your fair head stuck on a pike -- like that of any other rebel!"),
-("comment_intro_female_noble_cunning", "It is not unheard-of for a woman to seek her fortune on the battlefields of Calradia, but neither is it usual. I shall be most interested in your progress."),
-("comment_intro_female_noble_sadistic", "You appear to be of noble rank, but I don't recognize your banner. Clearly, another foreigner come to our shores -- no doubt from a land where men are weak, and the women ride to war in their place!"),
-("comment_intro_female_noble_goodnatured", "I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance,, my lady! It is good to make your acquaintance."),
-("comment_intro_female_noble_upstanding", "It is not every day that we see a woman caparisoned for war. Please do not take this amiss, my lady, for you have every right to protect yourself, but I cannot pretend to be fully comfortable with your decision to fight in battle. I would prefer that women be untouched by these wars, as I believe the female to be the custodian of what little gentility and tenderness remains to us."),
+("comment_intro_female_noble_pitiless", "I see that you carry a noble's banner, but I do not recognize the device... You should know, {boy/lady}, that in Calradia it is the {women/men} to ride to war, and if you seek to overturn the natural order of things, you will find your fair head stuck on a pike -- like that of any other rebel!"),
+("comment_intro_female_noble_cunning", "It is not unheard-of for a {male/woman} to seek {his/her} fortune on the battlefields of Calradia, but neither is it usual. I shall be most interested in your progress."),
+("comment_intro_female_noble_sadistic", "You appear to be of noble rank, but I don't recognize your banner. Clearly, another foreigner come to our shores -- no doubt from a land where {women/men} are weak, and the {men/women} ride to war in their place!"),
+("comment_intro_female_noble_goodnatured", "I see that you carry a {noblewoman/nobleman}'s banner, but I do not recognize the device. Forgive my ignorance, {dear boy/my lady}! It is good to make your acquaintance."),
+("comment_intro_female_noble_upstanding", "It is not every day that we see a {male/woman} caparisoned for war. Please do not take this amiss, {dear boy/my lady}, for you have every right to protect yourself, but I cannot pretend to be fully comfortable with your decision to fight in battle. I would prefer that {males/women} be untouched by these wars, as I believe the {male/female} to be the custodian of what little gentility and tenderness remains to us."),
 
 
 #admiring
-("comment_intro_female_admiring_liege", "It is not often that I meet a woman who aspires to lead men into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
-("comment_intro_female_admiring_martial", "Greetings, my lady. Although I see from your demeanor that you are not a conventional maiden, I hope that you are not averse to a declaration of admiration from me, your most humble servant."),
-("comment_intro_female_badtempered_admiring", "Heh. Fancy this -- a maiden, all equipped for war. Well, it's a strange sight, but in your case, I can imagine that it might grow on me."),
-("comment_intro_female_pitiless_admiring", "It is unusual to see a woman girt for war. Be careful, my lady -- it is a harsh world, and it would be a shame to see such beauty marred by a sword-blow."),
-("comment_intro_female_cunning_admiring", "Greetings, my lady. Please do not think it forward, if I say that it is unusual to see a woman caparisoned for war. I hope that one day I may be the father of a daughter possessed of such bravery and spirit."),
-("comment_intro_female_sadistic_admiring", "What have we here! A woman, caparisoned for war! Well, I dare say that one as fair as you could lend a touch of femininity even to a mail hauberk."),
-("comment_intro_female_admiring_goodnatured", "My lady, if you are skilled as arms as you are fair in countenance, then your enemies should indeed fear you!"),
-("comment_intro_female_admiring_upstanding", "Greetings, my lady. Even with the dust of the march upon your clothes and gear, I can see that you are not lacking in the graces of your noble sex."),
+##(... continuing dplmc+ changes to include female-to-male versions ...)
+("comment_intro_female_admiring_liege", "It is not often that I meet a {male/woman} who aspires to lead {warriors/men} into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
+("comment_intro_female_admiring_martial", "Greetings, {dear boy/my lady}. Although I see from your demeanor that you are not a conventional {boy/maiden}, I hope that you are not averse to a declaration of admiration from me, your most humble servant."),
+("comment_intro_female_badtempered_admiring", "Heh. Fancy this -- a {pretty boy/maiden}, all equipped for war. Well, it's a strange sight, but in your case, I can imagine that it might grow on me."),
+("comment_intro_female_pitiless_admiring", "It is unusual to see a {male/woman} girt for war. Be careful, {dear boy/my lady} -- it is a harsh world, and it would be a shame to see such beauty marred by a sword-blow."),
+#Next line deliberately doesn't switch the gender of daughter in the female-to-male version (the implication is that the amazon wants her warrior daughters to have similar bravery)
+("comment_intro_female_cunning_admiring", "Greetings, {dear boy/my lady}. Please do not think it forward, if I say that it is unusual to see a {male/woman} caparisoned for war. I hope that one day I may be the {mother/father} of a daughter possessed of such bravery and spirit."),
+("comment_intro_female_sadistic_admiring", "What have we here! A {pretty boy/woman}, caparisoned for war! Well, I dare say that one as fair as you could lend a touch of {delicacy/femininity} even to a mail hauberk."),
+("comment_intro_female_admiring_goodnatured", "{Dear boy/My lady}, if you are skilled as arms as you are fair in countenance, then your enemies should indeed fear you!"),
+("comment_intro_female_admiring_upstanding", "Greetings, {dear boy/my lady}. Even with the dust of the march upon your clothes and gear, I can see that you are not lacking in the graces of your noble sex."),
 
 #common
-("comment_intro_female_common_liege", "It is not often that I meet a woman who aspires to lead men into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
-("comment_intro_female_common_martial", "I must say, my lady -- do be careful, riding about this dangerous land. If you ever wished to seek a more... em... settled life, I'm sure I could find you a worthy husband from among my men."),
-("comment_intro_female_common_badtempered", "By the way, girl -- does your husband know that you nicked his weapons and armor? I'll bet you're in for a right old beating when you get home!"),
-("comment_intro_female_common_pitiless", "These are fallen times indeed, when even women turn brigand, to pick the leavings from the wreckage of war."),
-("comment_intro_female_common_cunning", "It is not unheard-of for a woman to seek her fortune on the battlefields of Calradia, but neither is it usual. I shall be most interested in your progress."),
-("comment_intro_female_common_sadistic", "A woman, caparisoned for war! Well, I suppose that you're no more womanly than most of those in my service who call themselves warriors."),
-("comment_intro_female_common_goodnatured", "From the look of you, I suppose you can handle yourself, but do be careful out there, my lady."),
-("comment_intro_female_common_upstanding", "It is not every day that we see a woman caparisoned for war. Please do not take this amiss, my lady, for you have every right to protect yourself, but I cannot pretend to be fully comfortable with your decision to fight in battle. I would prefer that women be untouched by these wars, as I believe the female to be the custodian of what little gentility and tenderness remains to us."),
+##(... continuing dplmc+ changes to include female-to-male versions ...)
+("comment_intro_female_common_liege", "It is not often that I meet a {male/woman} who aspires to lead {warriors/men} into battle. But these are dark and troubled times, and I for one will not turn away hands that can grip a sword, should their owner be brave and loyal."),
+("comment_intro_female_common_martial", "I must say, {dear boy/my lady} -- do be careful, riding about this dangerous land. If you ever wished to seek a more... em... settled life, I'm sure I could find you a worthy {wife/husband} from among my {warriors/men}."),
+("comment_intro_female_common_badtempered", "By the way, {boy/girl} -- does your {mistress/husband} know that you nicked {her/his} weapons and armor? I'll bet you're in for a right old beating when you get home!"),
+("comment_intro_female_common_pitiless", "These are fallen times indeed, when even {males/women} turn brigand, to pick the leavings from the wreckage of war."),
+("comment_intro_female_common_cunning", "It is not unheard-of for a {male/woman} to seek {his/her} fortune on the battlefields of Calradia, but neither is it usual. I shall be most interested in your progress."),
+("comment_intro_female_common_sadistic", "A {male/woman}, caparisoned for war! Well, I suppose that you're {not much less/no more} womanly than most of those in my service who call themselves warriors."),
+("comment_intro_female_common_goodnatured", "From the look of you, I suppose you can handle yourself, but do be careful out there, {dear boy/my lady}."),
+("comment_intro_female_common_upstanding", "It is not every day that we see a {male/woman} caparisoned for war. Please do not take this amiss, {dear boy/my lady}, for you have every right to protect yourself, but I cannot pretend to be fully comfortable with your decision to fight in battle. I would prefer that {males/women} be untouched by these wars, as I believe the {male/female} to be the custodian of what little gentility and tenderness remains to us."),
 
 
 #Rejoinder
+##(... continuing dplmc+ changes to include female-to-male versions ...)
 ("rejoinder_intro_female_common_badtempered", "I won my weapons in battle. Would you care to test their edge?"),
-("rejoinder_intro_female_noble_sadistic", "Never mind my country. Here in Calradia, it seems, dogs lead men to war."),
-("rejoinder_intro_female_common_sadistic", "And you, sir, are no more bestial than my horse."),
+("rejoinder_intro_female_noble_sadistic", "Never mind my country. Here in Calradia, it seems, dogs lead {soldiers/men} to war."),
+("rejoinder_intro_female_common_sadistic", "And you, {madam/sir}, are no more bestial than my horse."),
 ("rejoinder_intro_female_noble_pitiless", "I would restore the natural order, so that you no longer speak from your arse."),
 ("rejoinder_intro_female_common_pitiless", "Indeed, these are fallen times, when brigands call themselves 'Lord'."),
 
 ("rejoinder_intro_noble_sadistic", "Maybe now I'll take your banner. And your cattle. And your life."),
 
 
-("rejoinder_intro_female_pitiless_admiring", "I would be delighted to mar your handsome nose, sir."),
+("rejoinder_intro_female_pitiless_admiring", "I would be delighted to mar your {pretty face/handsome nose}, {madam/sir}."),
 ("rejoinder_intro_female_common_upstanding", "Would you like to feel the tenderness of my steel?"),
 ("rejoinder_intro_female_noble_upstanding", "Would you like to feel the tenderness of my steel?"),
-("rejoinder_intro_female_common_martial", "I could find worthier husbands than those in a kennel."),
+("rejoinder_intro_female_common_martial", "I could find worthier {wives/husbands} than those in a kennel."),
 ("rejoinder_intro_female_sadistic_admiring", "You could add a touch of humanity to a horse's harness, but just a touch."),
 ("rejoinder_intro_female_badtempered_admiring", "If you're disturbed by the sight of me, I'd be pleased to put out your eyes."),
-
+##(end dplmc+ changes to include female-to-male versions)
+##diplomacy end+
 
 #("comment_defer_fief_to_woman", "Were you a man, I would gladly have granted you land, and counted you as one of my bravest vassals. But you see, this has never before happened in Calradia. We have had women serve in our armies, and sometimes, a woman who is the inheritor of her husband or father will lead her retainers into battle to uphold her family obligation. But to enfief a woman for having proved herself in battle? I, for one, have not heard of this."),
 
@@ -1780,44 +1829,60 @@ strings = [
 
 
 
-  ("comment_you_defeated_a_lord_allied_liege",                   "So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that."), 
-  ("comment_you_defeated_a_lord_allied_unfriendly_spiteful",     "I heard that you fought and defeated {s54}. Every dog has its day, I suppose."), 
-  ("comment_you_defeated_a_lord_allied_spiteful",                "I heard that you fought and defeated that dog {s54}. Ah, if only I could have heard him whimpering for mercy."), 
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_defeated_a_lord_allied_liege",                   "So, you crossed swords with that rascal they call {s54}, and emerged victorious. I am very happy to hear that."),
+  ("comment_you_defeated_a_lord_allied_unfriendly_spiteful",     "I heard that you fought and defeated {s54}. Every dog has its day, I suppose."),
+  ("comment_you_defeated_a_lord_allied_spiteful",                "I heard that you fought and defeated that dog {s54}. Ah, if only I could have heard {reg4?her:him} whimpering for mercy."),
   ("comment_you_defeated_a_lord_allied_unfriendly_chivalrous",   "I heard that you fought and defeated {s54}. I hope that you did not use dishonourable means to do so."),
-  ("comment_you_defeated_a_lord_allied",                         "I heard that you fought and defeated {s54}. I wish you joy of your victory."), 
+  ("comment_you_defeated_a_lord_allied",                         "I heard that you fought and defeated {s54}. I wish you joy of your victory."),
+  ##diplomacy end+
 
-  ("comment_you_defeated_me_enemy_chivalrous", "I will not begrudge you your victory the last time that we met, but I am anxious for another round!"), 
-  ("comment_you_defeated_me_enemy_spiteful",   "I have been looking forward to meeting you again. Your tricks will not deceive me a second time, and I will relish hearing your cries for mercy."), 
-  ("comment_you_defeated_me_enemy",            "When last we met, {playername}, you had the better of me. But I assure you that it will not happen again!"), 
+  ("comment_you_defeated_me_enemy_chivalrous", "I will not begrudge you your victory the last time that we met, but I am anxious for another round!"),
+  ("comment_you_defeated_me_enemy_spiteful",   "I have been looking forward to meeting you again. Your tricks will not deceive me a second time, and I will relish hearing your cries for mercy."),
+  ("comment_you_defeated_me_enemy",            "When last we met, {playername}, you had the better of me. But I assure you that it will not happen again!"),
 
-  ("comment_I_defeated_you_enemy_spiteful",          "Back for more? Make me fight you again, and I'll feed your bowels to my hounds."), 
-  ("comment_I_defeated_you_enemy_chivalrous",        "Come to test your valor against me again, {playername}?"), 
-  ("comment_I_defeated_you_enemy_benevolent",        "So once again you come at me? Will you ever learn?"), 
+  ("comment_I_defeated_you_enemy_spiteful",          "Back for more? Make me fight you again, and I'll feed your bowels to my hounds."),
+  ("comment_I_defeated_you_enemy_chivalrous",        "Come to test your valor against me again, {playername}?"),
+  ("comment_I_defeated_you_enemy_benevolent",        "So once again you come at me? Will you ever learn?"),
   ("comment_I_defeated_you_enemy_coldblooded",       "You are persistent, but a nuisance."),
-  ("comment_I_defeated_you_enemy",                   "How many times must I chastise you before you learn to keep your distance?"), 
+  ("comment_I_defeated_you_enemy",                   "How many times must I chastise you before you learn to keep your distance?"),
 
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  #Replacing "men" with "warriors" when the enemy leader was female in case it was an all-female band.
+  ("comment_we_were_defeated_unfriendly_spiteful",   "Last I saw you, you had been struck down by the {reg4?warriors:men} of {s54}. I blame you for that disaster. What a pity to see that you survived."),
+  ("comment_we_were_defeated_unfriendly",            "Last I saw you, you had been struck down by the {reg4?warriors:men} of {s54}. Well, I see that you survived."),
+  ("comment_we_were_defeated_cruel",                 "Last I saw you, you had been struck down by the {reg4?warriors:men} of {s54}. Don't worry -- we'll find {reg4?her:him}, and make {reg4?her:him} choke on {reg4?her:her} victory."),
+  ("comment_we_were_defeated_default",               "Last I saw you, you had been struck down by the {reg4?warriors:men} of {s54}. It is good to see you alive and well."),
+  ##diplomacy end+
 
-  ("comment_we_were_defeated_unfriendly_spiteful",   "Last I saw you, you had been struck down by the men of {s54}. I blame you for that disaster. What a pity to see that you survived."), 
-  ("comment_we_were_defeated_unfriendly",            "Last I saw you, you had been struck down by the men of {s54}. Well, I see that you survived."), 
-  ("comment_we_were_defeated_cruel",                 "Last I saw you, you had been struck down by the men of {s54}. Don't worry -- we'll find him, and make him choke on his victory."), 
-  ("comment_we_were_defeated_default",               "Last I saw you, you had been struck down by the men of {s54}. It is good to see you alive and well."), 
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_were_defeated_allied_friendly_spiteful",      "I heard that {s54} gave you a hard time. Don't worry, friend -- I'll find {reg4?her:him} for you, and make you a gift of {reg4?her:his} head."),
+  ("comment_you_were_defeated_allied_unfriendly_cruel",       "I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!"),
+  ("comment_you_were_defeated_allied_spiteful",               "I heard that {s54} crushed you underfoot like an ant. Hah! Children should not play games made for grown-ups, little {boy/girl}!"),
+  ("comment_you_were_defeated_allied_pitiless",               "I heard that {s54} defeated you, and scattered your forces. That is most disappointing..."),
+  ("comment_you_were_defeated_allied_unfriendly_upstanding",  "I heard that {s54} defeated you. Perhaps you should consider if you have considered any misdeeds, that might cause heaven to rebuke you in this way."),
+  ("comment_you_were_defeated_allied_unfriendly",             "I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?"),
+  ("comment_you_were_defeated_allied",                        "I heard that {s54} defeated you. But take heart -- the tables will soon be turned!"),
+  ##diplomacy end+
 
-  ("comment_you_were_defeated_allied_friendly_spiteful",      "I heard that {s54} gave you a hard time. Don't worry, friend -- I'll find him for you, and make you a gift of his head."), 
-  ("comment_you_were_defeated_allied_unfriendly_cruel",       "I had heard that {s54} slaughtered your men like sheep. But here you are, alive. Such a disappointment!"), 
-  ("comment_you_were_defeated_allied_spiteful",               "I heard that {s54} crushed you underfoot like an ant. Hah! Children should not play games made for grown-ups, little {boy/girl}!"), 
-  ("comment_you_were_defeated_allied_pitiless",               "I heard that {s54} defeated you, and scattered your forces. That is most disappointing..."), 
-  ("comment_you_were_defeated_allied_unfriendly_upstanding",  "I heard that {s54} defeated you. Perhaps you should consider if you have considered any misdeeds, that might cause heaven to rebuke you in this way."), 
-  ("comment_you_were_defeated_allied_unfriendly",             "I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?"), 
-  ("comment_you_were_defeated_allied",                        "I heard that {s54} defeated you. But take heart -- the tables will soon be turned!"), 
-
-  ("comment_you_helped_my_ally_unfriendly_chivalrous",        "I heard that you saved {s54} from likely defeat. Whatever else I may think of you, I must at least commend you for that."), 
-  ("comment_you_helped_my_ally_unfriendly",                   "{!}[revelance should be zero, and this message should not appear]"), 
-  ("comment_you_helped_my_ally_liege",                        "I heard that you saved my vassal {s54} from likely defeat. "), 
-  ("comment_you_helped_my_ally_unfriendly_spiteful",          "I heard that you rode to the rescue of our poor {s54}. Did you think him a damsel in distress? No matter -- it's a common mistake."), 
-  ("comment_you_helped_my_ally_spiteful",                     "I heard that you saved {s54} from a whipping. You should have let him learn his lesson, in my opinion."), 
-  ("comment_you_helped_my_ally_chivalrous",                   "I heard that you got {s54} out of a tight spot. That was a noble deed."), 
-  ("comment_you_helped_my_ally_default",                   "I heard that you got {s54} out of a tight spot. Good work!"), 
- 
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_helped_my_ally_unfriendly_chivalrous",        "I heard that you saved {s54} from likely defeat. Whatever else I may think of you, I must at least commend you for that."),
+  ("comment_you_helped_my_ally_unfriendly",                   "{!}[revelance should be zero, and this message should not appear]"),
+  ("comment_you_helped_my_ally_liege",                        "I heard that you saved my vassal {s54} from likely defeat. "),
+  ("comment_you_helped_my_ally_unfriendly_spiteful",          "I heard that you rode to the rescue of our poor {s54}. Did you think {reg4?her:him} a damsel in distress? No matter -- it's a common mistake."),
+  ("comment_you_helped_my_ally_spiteful",                     "I heard that you saved {s54} from a whipping. You should have let {reg4?her:him} learn {reg4?her:his} lesson, in my opinion."),
+  ("comment_you_helped_my_ally_chivalrous",                   "I heard that you got {s54} out of a tight spot. That was a noble deed."),
+  ("comment_you_helped_my_ally_default",                   "I heard that you got {s54} out of a tight spot. Good work!"),
+  ##diplomacy end+ 
+  
+  
+  
+  
+  
   ("comment_you_were_defeated_allied_unfriendly",             "I heard that {s54} defeated you. Look, try not to get too many of our men killed, will you?"), 
   ("comment_you_were_defeated_allied",                        "I heard that {s54} defeated you. But take heart -- the tables will soon be turned!"), 
 
@@ -1844,16 +1909,22 @@ strings = [
   ("comment_you_defeated_my_friend_enemy_spiteful",   "Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe."), 
   ("comment_you_defeated_my_friend_enemy",            "They say that you have defeated {s54}. But I will be a truer test of your skill at arms."), 
 
-  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "I heard that you captured {s54}. I hope that you squeezed him for every denar."), 
-  ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a gentleman!"), 
-  ("comment_you_captured_a_lord_allied_chivalrous",          "I heard that you captured {s54}. Well done. I assume, of course, that he has been been treated with the honours due his rank."), 
-  ("comment_you_captured_a_lord_allied",                     "I heard that you captured {s54}. Well done. His ransom must be worth quite something."), 
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "I heard that you captured {s54}. I hope that you squeezed {reg4?her:him} for every denar."),
+  ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a {gentleman/gentlewoman}!"),#also gentleman -> {gentleman/gentlewoman}
+  ("comment_you_captured_a_lord_allied_chivalrous",          "I heard that you captured {s54}. Well done. I assume, of course, that {reg4?she:he} has been been treated with the honours due {reg4?her:his} rank."),
+  ("comment_you_captured_a_lord_allied",                     "I heard that you captured {s54}. Well done. {reg4?Her:His} ransom must be worth quite something."),
+  ##diplomacy end+
 
-  ("comment_you_let_go_a_lord_allied_chivalrous",            "I heard that you captured {s54}, but then let him go. Such chivalry does a credit to our cause."),
-  ("comment_you_let_go_a_lord_allied_upstanding",            "I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one."),
-  ("comment_you_let_go_a_lord_allied_coldblooded",           "I heard that you captured {s54}, but then let him go. That was most chivalrous of you, but chivalry does not win wars."),
-  ("comment_you_let_go_a_lord_allied_unfriendly_spiteful",   "I heard that you captured {s54}, but then let him go. How very chivalrous of you! No doubt the widows and orphans he leaves in his wake will want to commend you in person."),
-  ("comment_you_let_go_a_lord_allied",                       "I heard that you captured {s54}, but then let him go. Well, I will not tell you what to do with your own prisoners."),
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_let_go_a_lord_allied_chivalrous",            "I heard that you captured {s54}, but then let {reg4?her:him} go. Such chivalry does a credit to our cause."),
+  ("comment_you_let_go_a_lord_allied_upstanding",            "I heard that you captured {s54}, but then let {reg4?her:him} go. Well, that was an honourable course of action, if possibly also a dangerous one."),
+  ("comment_you_let_go_a_lord_allied_coldblooded",           "I heard that you captured {s54}, but then let {reg4?her:him} go. That was most chivalrous of you, but chivalry does not win wars."),
+  ("comment_you_let_go_a_lord_allied_unfriendly_spiteful",   "I heard that you captured {s54}, but then let {reg4?her:him} go. How very chivalrous of you! No doubt the widows and orphans {reg4?she:he} leaves in {reg4?her:his} wake will want to commend you in person."),
+  ("comment_you_let_go_a_lord_allied",                       "I heard that you captured {s54}, but then let {reg4?her:him} go. Well, I will not tell you what to do with your own prisoners."),
+  ##diplomacy end+
 
 
   ("comment_you_let_me_go_spiteful",                    "When last we met, you had me at your mercy and allowed me to go free. I hope you enjoyed toying with me, like a cat with a mouse, because soon I will have you at my mercy, to slay or humiliate according to my fancy."),
@@ -1902,29 +1973,45 @@ strings = [
   ("comment_you_claimed_the_throne_2_player_liege",             "My informants tell me that some of your companions have telling the peasants that you have a claim to the throne. I sincerely hope that they have been acting without your orders."),
   
 #new political comments  
+##diplomacy start+
+#Note that the following are not called from the conversation-starting invocation of script_get_relevant_comment_to_s42
+##diplomacy end+
   ("comment_lord_intervened_against_me", "It is well known that I had quarreled with {s54}, and {s50} ruled in my rival's favor."),
   ("comment_i_protested_marshall_appointment", "It is well known that I had protested {s54}'s decision to appoint {s51} as marshal."),
   ("comment_i_blamed_defeat", "It is well known that I am dissatisfied with {s54} for the favor shown to {s51}, who led us to defeat against the {s56}."),
   ("comment_i_was_entitled_to_fief", "It is well known that I am disappointed that {s54} received the fief of {s51}, which should have gone to me."),
-  ("comment_i_quarreled_with_troop_over_woman", "It is well known that {s51} paid suit to {s54}, while I was also courting her. He is unworthy of her attentions, and I intend to teach him to keep his distance from her."),
+																																																							 
 
-  ("comment_i_quarreled_with_you_over_woman_default", "I hear that you have been paying suit to {s54}. I do not believe that you are worthy of a fair lady such as her, and would strongly encourage you to cease pursuing her."),
-  
-  ("comment_i_quarreled_with_you_over_woman_derisive", "I hear that you have been paying suit to {s54}. Let me tell you something -- I've had my eye on that one ever since I was a lad, and she was a lass. She's a high-born lady of this realm, and should not be demeaned by a foreigner's crude attentions. Keep away from her, or expect to pay the price!"),
-  
+##diplomacy start+
+#Altered to use reg3 for gender of s51, reg4 for gender of s54, and reg65 for gender of speaker
+#Note that some of these are not called from the conversation-starting invocation of script_get_relevant_comment_to_s42
+  ("comment_i_quarreled_with_troop_over_woman", "It is well known that {s51} paid suit to {s54}, while I was also courting {reg4?her:him}. {reg3?She:He} is unworthy of {reg4?her:his} attentions, and I intend to teach {reg3?her:him} to keep {reg3?her:his} distance from {reg4?her:him}."),
+
+  ("comment_i_quarreled_with_you_over_woman_default", "I hear that you have been paying suit to {s54}. I do not believe that you are worthy of a fair {reg4?lady:lad} such as {reg4?her:him}, and would strongly encourage you to cease pursuing {reg4?her:him}."),
+
+  ("comment_i_quarreled_with_you_over_woman_derisive", "I hear that you have been paying suit to {s54}. Let me tell you something -- I've had my eye on that one ever since I was a {reg65?lass:lad}, and {reg4?she:he} was a {reg4?lass:lad}. {reg4?She:he}'s a high-born {reg4?lady:scion} of this realm, and should not be demeaned by a foreigner's crude attentions. Keep away from {reg4?her:him}, or expect to pay the price!"),
+##diplomacy end+
+
   ("comment_player_suggestion_succeeded", "I followed your suggestion, and profited much by your advice."),
   ("comment_player_suggestion_failed", "I followed your suggestion and met with disaster, and I hold you responsible."),
 
-  ("comment_you_enfiefed_a_commoner_hesitant",  "I understand that you have given {s51} to a commoner who calls himself {s54}. Be careful. To learn the art of governance is no easy task, and perhaps it is best that fathers pass it on to their sons. I advise you against tampering with the institution of lordship."),
-  ("comment_you_enfiefed_a_commoner_derisive",   "I understand that you have given {s51} to a commoner who calls himself {s54}. Do not the ancients warn us against making royal robes out of the hides of pigs?"),
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s54.  Making this work required altering script_get_relevant_comment_to_s42
+  ("comment_you_enfiefed_a_commoner_hesitant",  "I understand that you have given {s51} to a commoner who calls {reg4?herself:himself} {s54}. Be careful. To learn the art of governance is no easy task, and perhaps it is best that fathers pass it on to their sons. I advise you against tampering with the institution of lordship."),
+  ("comment_you_enfiefed_a_commoner_derisive",   "I understand that you have given {s51} to a commoner who calls {reg4?herself:himself} {s54}. Do not the ancients warn us against making royal robes out of the hides of pigs?"),
   ("comment_you_enfiefed_a_commoner_nasty",      "I understand that you have given {s51} to a commoner who has taken the name of {s54}. Have a care! A dog may turn on its master."),
-   
+  ##diplomacy end+
+
+  ##diplomacy start+
+  #Make gender correct, using reg4 for the gender of s50.  Making this work required altering script_get_relevant_comment_to_s42
+  #Don't change the order of the following strings!  (Refer to script_get_relevant_comment_to_s42 if you must)
   ("comment_marriage_normal_family",  "Congratulations on your marriage to my {s11} {s50}. You may now consider yourself part of the family!"),
   ("comment_marriage_normal",   	  "Congratulations on your marriage to {s50}. The news does credit to you both."),
-  ("comment_marriage_normal_nasty",   "Well -- I see that you have married {s50}. She was always a silly girl, with appalling judgment."),
+  ("comment_marriage_normal_nasty",   "Well -- I see that you have married {s50}. (reg4?She:He} was always a silly {reg4?girl:boy}, with appalling judgment."),
 
-  ("comment_marriage_elopement_family",  "Well... You somehow persuaded my {s11} {s50} to marry you. I don't know what you did to make her accept you, but our family will not forget this humiliation."),
-  ("comment_marriage_elopement_liege",   "I hear that you have eloped with {s50}, against her family's wishes. I am not pleased. Her family are among the great lords of my realm, and I do not like to see them made to look like fools."),
+  ("comment_marriage_elopement_family",  "Well... You somehow persuaded my {s11} {s50} to marry you. I don't know what you did to make {reg4?her:him} accept you, but our family will not forget this humiliation."),
+  ("comment_marriage_elopement_liege",   "I hear that you have eloped with {s50}, against {reg4?her:his} family's wishes. I am not pleased. {reg4?Her:His} family are among the great lords of my realm, and I do not like to see them made to look like fools."),
+  ##diplomacy end+	  
 
   ("comment_you_broke_truce_as_my_vassal",  		"I hear that you have broken my truce by attacking {s55}. Do you know how this makes me look? If you were acting under my orders, I appear dishonorable. If you were not, I look weak. I have half a mind to indict you for treason here and now."),
   ("comment_you_attacked_neutral_as_my_vassal", "I hear that you have attacked subjects of the {s55}. You have given them an excuse to attack me, if they want... We shall see what comes of this. A fine day's work you have done!"),
@@ -4253,6 +4340,218 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("ranged_weapons_are_disallowed", "Ranged weapons are disallowed."),
   ("ranged_weapons_are_allowed", "Ranged weapons are allowed."),
   ("duel_starts_in_reg0_seconds", "Duel starts in {reg0} seconds..."),
+  
+  ##diplomacy begin
+###################################################################################
+# Autoloot
+###################################################################################
+	("dplmc_none", "none"),
+
+	("dplmc_item_pool_no_items", "There are currently no items in the item pool."),
+	("dplmc_item_pool_one_item", "There is one item left in the item pool."),
+	("dplmc_item_pool_many_items", "There are {reg20} items left in the item pool."),
+	("dplmc_item_pool_abandon", "Leave the items in the item pool and continue."),
+	("dplmc_item_pool_leave", "Done."),
+
+	("dplmc_hero_not_upgrading_armor","not upgrading my armor"),
+	("dplmc_hero_upgrading_armor","upgrading my own armor"),
+	("dplmc_hero_not_upgrading_horse","not upgrading my horses"),
+	("dplmc_hero_upgrading_horse","upgrading my own horses"),
+
+	("dplmc_hero_wpn_slot_none","Keep current ({s10})"), #0
+	("dplmc_hero_wpn_slot_horse","Horse"), #1 to maintain compatibility with header_items (item type 1 is horse)
+	("dplmc_hero_wpn_slot_one_handed","One-handed Weapon"), #2
+	("dplmc_hero_wpn_slot_two_handed","Two-handed Weapon"),  #3
+	("dplmc_hero_wpn_slot_polearm_all","Polearms"), #4
+	("dplmc_hero_wpn_slot_arrows","Arrows"), #5
+	("dplmc_hero_wpn_slot_bolts","Bolts"), #6
+	("dplmc_hero_wpn_slot_shield","Shield"), #7
+	("dplmc_hero_wpn_slot_bow","Bow"), #8
+	("dplmc_hero_wpn_slot_crossbow","Crossbow"), #9
+	("dplmc_hero_wpn_slot_throwing","Throwing Weapon"), #10
+  ##diplomacy start+ importing latest CC autoloot
+	("dplmc_hero_wpn_slot_goods", "Goods "), #11
+	("dplmc_hero_wpn_slot_head_armor", "Head armor "), #12
+	("dplmc_hero_wpn_slot_body_armor", "Body armor "), #13
+	("dplmc_hero_wpn_slot_foot_armor", "Foot armor "), #14
+	("dplmc_hero_wpn_slot_hand_armor", "Hand armor "), #15
+	("dplmc_hero_wpn_slot_pistol", "Pistol "), #16
+	("dplmc_hero_wpn_slot_musket", "Musket "), #17
+	("dplmc_hero_wpn_slot_bullets", "Bullets "), #18
+	("dplmc_hero_wpn_slot_animal", "Animal "), #19
+	("dplmc_hero_wpn_slot_book", "Book "), #20
+  ##diplomacy end+
+  #### Autoloot improved by rubik begin
+	("dplmc_hero_wpn_slot_two_handed_one_handed","Two-handed/One-handed"), #11
+  #### Autoloot improved by rubik end
+###################################################################################
+# End Autoloot
+###################################################################################
+
+  ("dplmc_gather_information", "gather information"),
+  ("dplmc_conclude_non_agression", "conclude a non-aggression treaty"),
+  ("dplmc_nearly_no", "nearly no"),
+  ("dplmc_less_than_one_hundred", "less than one hundred"),
+  ("dplmc_more_than_one_hundred", "more than one hundred"),
+  ("dplmc_more_than_two_hundred", "more than two hundred"),
+  ("dplmc_more_than_five_hundred", "more than five hundred"),
+  ("dplmc_bring_gift", "bring the gift"),
+  ("dplmc_exchange_prisoner","to exchange {s10} against {s11}"),
+  ("dplmc_has_been_set_free", "{s7} has been set free."),
+  ("dplmc_tax_very_low", "very low"),
+  ("dplmc_tax_low", "low"),
+  ("dplmc_tax_normal", "normal"),
+  ("dplmc_tax_high", "high"),
+  ("dplmc_tax_very_high", "very high"),
+  ("dplmc_place_is_occupied_by_insurgents","The place is held by insurgents."),
+  #nested diplomacy start+
+  #Alter prepositions for dplmc_relation_****_**_ns
+  #   indifferent against -> indifferent towards
+  #   resentful against   -> resentful towards
+  #Also changed pronouns to be gender-correct: "He" to {reg4?She:He}
+  ("dplmc_relation_mnus_100_ns", "{reg4?She:He} seems to be vengeful towards {s59}."), # -100..-94
+  ("dplmc_relation_mnus_90_ns",  "{reg4?She:He} seems to be vengeful towards {s59}."),  # -95..-84
+  ("dplmc_relation_mnus_80_ns",  "{reg4?She:He} seems to be vengeful towards {s59}."),
+  ("dplmc_relation_mnus_70_ns",  "{reg4?She:He} seems to be hateful towards {s59}."),
+  ("dplmc_relation_mnus_60_ns",  "{reg4?She:He} seems to be hateful towards {s59}."),
+  ("dplmc_relation_mnus_50_ns",  "{reg4?She:He} seems to be hostile towards {s59}."),
+  ("dplmc_relation_mnus_40_ns",  "{reg4?She:He} seems to be angry towards {s59}."),
+  ("dplmc_relation_mnus_30_ns",  "{reg4?She:He} seems to be resentful towards {s59}."),
+  ("dplmc_relation_mnus_20_ns",  "{reg4?She:He} seems to be grumbling against {s59}."),
+  ("dplmc_relation_mnus_10_ns",  "{reg4?She:He} seems to be suspicious towards {s59}."),
+  ("dplmc_relation_plus_0_ns",   "{reg4?She:He} seems to be indifferent towards {s59}."),# -5...4
+  ("dplmc_relation_plus_10_ns",  "{reg4?She:He} seems to be cooperative towards {s59}."), # 5..14
+  ("dplmc_relation_plus_20_ns",  "{reg4?She:He} seems to be welcoming towards {s59}."),
+  ("dplmc_relation_plus_30_ns",  "{reg4?She:He} seems to be favorable to {s59}."),
+  ("dplmc_relation_plus_40_ns",  "{reg4?She:He} seems to be supportive to {s59}."),
+  ("dplmc_relation_plus_50_ns",  "{reg4?She:He} seems to be friendly to {s59}."),
+  ("dplmc_relation_plus_60_ns",  "{reg4?She:He} seems to be gracious to {s59}."),
+  ("dplmc_relation_plus_70_ns",  "{reg4?She:He} seems to be fond of {s59}."),
+  ("dplmc_relation_plus_80_ns",  "{reg4?She:He} seems to be loyal to {s59}."),
+  ("dplmc_relation_plus_90_ns",  "{reg4?She:He} seems to be devoted to {s59}."),
+  ("dplmc_s39_rival", " {reg4?She:He} scents rivals in {s39}"),
+  ##nested diplomacy end+
+  ("dplmc_s41_s39_rival", "{s41}, {s39}"),
+  ##nested diplomacy start+
+  #Changed pronouns to be gender-correct: "He" to {reg4?She:He}, etc.
+  ("dplmc_s40_love_interest_s39", "{s40}. Aside from that {reg4?her:his} love interest is {s39}."),
+  ("dplmc_s40_betrothed_s39", "{s40}. Aside from that {reg4?she:he} is betrothed to {s39}."),
+  ("dplmc_reputation_martial", "It is said that {s46} is a martial person."),
+  ("dplmc_reputation_debauched", "It is said that {s46} is a debauched person."),
+  ("dplmc_reputation_pitiless", "It is said that {s46} is a pitiless person."),
+  ("dplmc_reputation_calculating", "It is said that {s46} is a calculating person."),
+  ("dplmc_reputation_quarrelsome", "It is said that {s46} is a quarrelsome person."),
+  ("dplmc_reputation_goodnatured", "It is said that {s46} is a good-natured person."),
+  ("dplmc_reputation_upstanding", "It is said that {s46} is a upstanding person."),
+  ("dplmc_reputation_conventional", "It is said that {s46} is a conventional person."),
+  ("dplmc_reputation_adventurous", "It is said that {s46} is a adventurous person."),
+  ("dplmc_reputation_romantic", "It is said that {s46} is a romantic person."),
+  ("dplmc_reputation_moralist", "It is said that {s46} is a moralist."),#Moralist -> moralist
+  ("dplmc_reputation_ambitious", "It is said that {s46} is a ambitious person."),
+  ("dplmc_reputation_unknown", "{s46}'s motivations are a closed book."),#Rewrote
+  ##nested diplomacy end+
+  ("dplmc_s21__the_s5_is_bound_by_alliance_not_to_attack_the_s14s18_it_will_expire_in_reg1_days", "{s21}^* The {s5} has formed an alliance with the {s14}.{s18} It will degrade into a defensive pact in {reg1} days."),
+  ("dplmc_s21__the_s5_is_bound_by_defensive_not_to_attack_the_s14s18_it_will_expire_in_reg1_days", "{s21}^* The {s5} has agreed to a defensive pact with the {s14}.{s18} It will degrade into a trade agreement in {reg1} days."),
+  ("dplmc_s21__the_s5_is_bound_by_trade_not_to_attack_the_s14s18_it_will_expire_in_reg1_days", "{s21}^* The {s5} has agreed to a trade agreement with the {s14}.{s18} It will degrade into a non-aggression pact in {reg1} days."),
+  ("dplmc_small","small"),
+  ("dplmc_medium","medium"),
+  ("dplmc_big","big"),
+  ("dplmc_elite","elite"),
+  ("dplmc_very_decentralized", "very decentralized"),
+  ("dplmc_quite_decentralized", "quite decentralized"),
+  ("dplmc_little_decentralized", "a little decentralized"),
+  ("dplmc_neither_centralize_nor_decentralized","neither too centralized nor decentralized"),
+  ("dplmc_little_centralized", "a little centralized"),
+  ("dplmc_quite_centralized", "quite centralized"),
+  ("dplmc_very_centralized", "very centralized"),
+  ("dplmc_very_plutocratic", "very plutocratic"),
+  ("dplmc_quite_plutocratic", "quite plutocratic"),
+  ("dplmc_little_plutocratic", "a little plutocratic"),
+  ("dplmc_neither_aristocratic_nor_plutocratic","neither too aristocratic nor plutocratic"),
+  ("dplmc_little_aristocratic", "a little aristocratic"),
+  ("dplmc_quite_aristocratic", "quite aristocratic"),
+  ("dplmc_very_aristocratic", "very aristocratic"),
+  ("dplmc_all_free", "almost all free"),
+  ("dplmc_mostly_free", "mostly free"),
+  ("dplmc_usually_free", "usually free"),
+  ("dplmc_mixture_serfs", "a mixture of serfs and freeman"),
+  ("dplmc_usually_serfs", "usually serfs"),
+  ("dplmc_mostly_serfs", "mostly serfs"),
+  ("dplmc_all_serfs", "almost all serfs"),
+  ("dplmc_very_quantity", "a vast number of soldiers"),
+  ("dplmc_great_quantity", "very many soldiers"),
+  ("dplmc_good_quantity", "many soldiers"),
+  ("dplmc_mediocre_quality", "a mediocre quality"),
+  ("dplmc_good_quality", "a good quality"),
+  ("dplmc_great_quality", "a great quality"),
+  ("dplmc_very_quality", "a very high quality"),
+  ("dplmc_s21_the_s8_declared_war_to_fulfil_pact", "{s21}. The {s8} declared war to fulfil a pact"),
+ ##diplomacy end
+ ##diplomacy start+
+ ("dplmc_very_laissez_faire", "very laissez-faire"),
+ ("dplmc_quite_laissez_faire", "quite laissez-faire"),
+ ("dplmc_little_laissez_faire", "a little laissez-faire"),
+ ("dplmc_neither_mercantilist_nor_laissez_faire","neither particularly mercantilist nor entirely laissez-faire"),
+ ("dplmc_little_mercantilist", "a little mercantilist"),
+ ("dplmc_quite_mercantilist", "quite mercantilist"),
+ ("dplmc_very_mercantilist", "very mercantilist"),
+
+  ("dplmc_how_will_your_male_vassals_be_known","How will your male vassals be known?"),
+  ("dplmc_how_will_your_female_vassals_be_known","How will your female vassals be known?"),
+  ("dplmc_s40_married_s39", "{s40}. Aside from that {reg4?she:he} is married to {s39}."),
+ #For fief exachange
+ #TODO: customize responses by relation and/or personality
+  ("dplmc_fief_exchange_ask_interest", "Would you be interested in exchanging fiefs?"),
+  ("dplmc_fief_exchange_not_interested","No, I would not be interested in that."),
+
+  ("dplmc_fief_exchange_listen", "This is somewhat unusual but not unprecendented.  I will listen.  Which fief of mine did you have in mind?"),
+  ("dplmc_fief_exchange_listen_player_approval", "This is somewhat unusual, but since you're the {king/queen} there is no one to object.  Which fief of mine did you have in mind?"),
+  ("dplmc_fief_exchange_listen_s10_approval", "This is somewhat unusual, but unless {s10} objects there is no reason we could not.  Which fief of mine did you have in mind?"),
+
+  ("dplmc_fief_exchange_listen_2", "What fief do you offer in exchange?"),
+  ("dplmc_fief_exchange_refuse_home", "I have no intention of giving up {s14}."),
+  ("dplmc_fief_exchange_refuse_town", "I don't want to exchange a town for a castle or village."),
+  ("dplmc_fief_exchange_refuse_castle", "I don't want to exchange a castle for a mere village."),
+  ("dplmc_fief_exchange_refuse_rich", "I don't want to exchange a richer fief for one that much poorer."),
+  ("dplmc_fief_exchange_refuse_s14_attack", "Speak of this to me later when {s14} is not under attack."),
+  ("dplmc_fief_exchange_accept", "That exchange is acceptable to me."),
+  ("dplmc_fief_exchange_accept_reg3_denars", "That exchange is acceptable to me, if you are willing to provide {reg3} denars to cover my expenses from the relocation."),
+
+  ("dplmc_fief_exchange_confirm","It is settled then."),
+  ("dplmc_fief_exchange_confirm_reg3_denars","It is settled then.  Here are your {reg3} denars."),
+  #Other dialog
+  ("dplmc_your_s11_s10", "Your {s11}, {s10}"),
+  ("dplmc_reg6my_reg7spouse", "{reg6?M:m}y {reg7?love:{husband/wife}}"),
+  #For trying to convince someone to support another candidate
+  ("dplmc_refuse_support_s43_named_s4", "Support a {s43} like {s4}?  I think not."),
+  #for political comments
+  ("dplmc_comment_you_enfiefed_a_commoner_supportive",  "I understand that you have given {s51} to {s54}.  Others may find this controversial, but I believe that {s54} will be an able governor, and that {reg4?she:he} will not let you down."),
+  #forms of address
+  ("dplmc_sirmadame", "{sir/madame}"),
+  ("dplmc_sirmadam",  "{sir/madam}"),
+  ("dplmc_my_lordlady", "my {lord/lady}"),
+  ("dplmc_your_highness", "your highness"),
+  #expanded relation terms
+  ("dplmc_grandfather", "grandfather"),
+  ("dplmc_grandmother", "grandmother"),
+  ("dplmc_grandson", "grandson"),
+  ("dplmc_granddaughter", "granddaughter"),
+  ("dplmc_half_brother", "half-brother"),#sharing a father or a mother, but not both
+  ("dplmc_half_sister", "half-sister"),#sharing a father or a mother, but not both
+  ("dplmc_sister_wife", "sister-wife"),#two women married to the same person
+  ("dplmc_co_husband", "co-husband"),#two men married to the same person
+  ("dplmc_co_spouse", "co-spouse"),#two people of different genders married to the same third person
+  #not used in the relation scripts, but used elsewhere
+  ("dplmc_friend", "friend"),
+  ("dplmc_ally", "ally"),
+  #status notifier
+  ("s54_is_deceased", "{s54} is deceased."),
+  ("dplmc_political_explanation_original_lord", "In this case, the fortress should go its original owner."),
+  ##Utility: use these to avoid use of high-numbered string registers
+ ("dplmc_s0_comma_s1", "{!}{s0}, {s1}"),
+ ("dplmc_s0_and_s1",   "{s0} and {s1}"),
+ ("dplmc_s0_newline_s1", "{!}{s0}^{s1}"),
+ ##diplomacy end+
 ####################################################################################################################################
 # LAV MODIFICATIONS START (COMPANIONS OVERSEER MOD)
 ####################################################################################################################################

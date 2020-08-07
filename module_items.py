@@ -1462,7 +1462,10 @@ items = [
 (particle_system_burst,"psys_village_fire_big",pos5,50),
 (play_sound_at_position,"snd_pistol_shot",pos5),
 ])]],
-
+##diplomacy begin
+["dplmc_coat_of_plates_red_constable", "Constable Coat of Plates", [("coat_of_plates_red",0)], itp_unique|itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+ 3828 , weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], []],
+##diplomacy end
 ["items_end", "Items End", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 ]
 # modmerger_start version=201 type=2

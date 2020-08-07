@@ -37,13 +37,11 @@ fac_kingdom_15 = 35
 fac_kingdoms_end = 36
 fac_robber_knights = 37
 fac_khergits = 38
-fac_manhunters = 39
-fac_deserters = 40
-fac_mountain_bandits = 41
-fac_forest_bandits = 42
-fac_undeads = 43
-fac_slavers = 44
-fac_peasant_rebels = 45
-fac_noble_refugees = 46
-
-
+fac_manhunters = 40
+fac_deserters = 41
+fac_mountain_bandits = 42
+fac_forest_bandits = 43
+fac_undeads = 44
+fac_slavers = 45
+fac_peasant_rebels = 46
+fac_noble_refugees = 47

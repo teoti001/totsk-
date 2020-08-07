@@ -71,7 +71,7 @@ tracks = [
   ("killed_by_khergit", "killed_by_khergit_lully_versailles.ogg", mtf_persist_until_finished|mtf_culture_3|mtf_sit_killed|mtf_module_track, 0),
   ("killed_by_neutral", "killed_by_neutral_tin_whistles.ogg", mtf_persist_until_finished|mtf_culture_6|mtf_sit_killed|mtf_module_track, 0),
   ("killed_by_nord", "killed_by_nord_dutch_inspection.ogg", mtf_persist_until_finished|mtf_culture_4|mtf_sit_killed|mtf_module_track, 0),
-  ("killed_by_rhodok", "french_defeat_la_pompe_funebre.ogg", mtf_persist_until_finished|mtf_culture_5|mtf_sit_killed, mtf_module_track,0),
+  ("killed_by_rhodok", "french_defeat_la_pompe_funebre.ogg", mtf_persist_until_finished|mtf_culture_5|mtf_sit_killed|mtf_module_track,0),
   ("killed_by_swadian", "killed_by_swadian.ogg", mtf_persist_until_finished|mtf_culture_1|mtf_sit_killed, 0),
   ("killed_by_vaegir", "defeat_by_british_funeral_march.ogg", mtf_persist_until_finished|mtf_culture_2|mtf_sit_killed|mtf_module_track, 0),
   

@@ -496,3 +496,6 @@ pt_looter_lair = 494
 pt_bandit_lair_templates_end = 495
 pt_leaded_looters = 496
 pt_regiment = 497
+pt_dplmc_spouse = 498
+pt_dplmc_gift_caravan = 499
+pt_dplmc_recruiter = 500
