@@ -8,3 +8,4 @@
 #export_dir = "C:/Users/Duh/Desktop/Mount&Blade Warband 1.151/Modules/totsk"
 export_dir = "D:/SteamLibrary/steamapps/common/MountBlade Warband/Modules/totsk-dev/"
 #export_dir = "C:/Program Files/Mount&Blade/Modules/Native/"
+scan_module_textures = 1

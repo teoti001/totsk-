@@ -64019,9 +64019,9 @@ firewood that warmed many freezing homes during winter. All for a few silvers, o
       (try_end),
     (try_end),
 
-    (faction_get_slot, ":party_template_a", ":template_faction", slot_faction_cavalry_a),
-    (faction_get_slot, ":party_template_b", ":template_faction", slot_faction_cavalry_b),
-    (faction_get_slot, ":party_template_c", ":template_faction", slot_faction_cavalry_c),
+    (faction_get_slot, ":party_template_a", ":template_faction", slot_faction_village_recruits_1),
+    (faction_get_slot, ":party_template_b", ":template_faction", slot_faction_village_recruits_2),
+    (faction_get_slot, ":party_template_c", ":template_faction", slot_faction_village_recruits_1),
 
     (try_begin),
       (eq, ":size", 3),
