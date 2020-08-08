@@ -2116,11 +2116,11 @@ simple_triggers = [
                 (store_random_in_range, ":random",-100, 0),
                 (gt, ":random", ":center_relation"),
 
-                (neg|party_slot_eq, ":center_no", slot_village_infested_by_bandits, "trp_peasant_woman"),
-                (display_message, "@Riot in {s6}!"),
-                (party_set_slot, ":center_no", slot_village_infested_by_bandits, "trp_peasant_woman"), #trp_peasant_woman used to simulate riot
-                (call_script, "script_change_center_prosperity", ":center_no", -1),
-                (call_script, "script_add_notification_menu", "mnu_dplmc_notification_riot", ":center_no", 0),
+                #(neg|party_slot_eq, ":center_no", slot_village_infested_by_bandits, "trp_peasant_woman"),
+                #(display_message, "@Riot in {s6}!"),
+                #(party_set_slot, ":center_no", slot_village_infested_by_bandits, "trp_peasant_woman"), #trp_peasant_woman used to simulate riot
+                #(call_script, "script_change_center_prosperity", ":center_no", -1),
+                #(call_script, "script_add_notification_menu", "mnu_dplmc_notification_riot", ":center_no", 0),
 
                 #add additional troops
                 (store_character_level, ":player_level", "trp_player"),
