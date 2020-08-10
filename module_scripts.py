@@ -942,6 +942,9 @@ scripts = [
 	  #Prussia
 	  (call_script, "script_give_center_to_faction_aux", "p_town_41", "fac_kingdom_9"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_42", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_99", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_100", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_101", "fac_kingdom_9"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_43", "fac_kingdom_9"),
 	  #Russia
 	  (call_script, "script_give_center_to_faction_aux", "p_town_51", "fac_kingdom_12"),
@@ -969,6 +972,10 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_town_69", "fac_kingdom_15"),
 	  #Polish Additions
 	  (call_script, "script_give_center_to_faction_aux", "p_town_70", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_95", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_96", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_97", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_98", "fac_kingdom_11"),
 	  #French Additions
 	  (call_script, "script_give_center_to_faction_aux", "p_town_71", "fac_kingdom_1"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_72", "fac_kingdom_1"),
@@ -993,6 +1000,8 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_town_89", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_90", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_91", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_102", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_103", "fac_kingdom_3"),
 	  
       (call_script, "script_give_center_to_faction_aux", "p_castle_1", "fac_kingdom_5"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_2", "fac_kingdom_3"),
@@ -1071,14 +1080,21 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_61", "fac_kingdom_8"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_62", "fac_kingdom_8"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_63", "fac_kingdom_8"),
-	  (call_script, "script_give_center_to_faction_aux", "p_castle_63_new", "fac_kingdom_8"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_149", "fac_kingdom_8"),
 	  #Prussia
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_64", "fac_kingdom_9"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_65", "fac_kingdom_9"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_66", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_158", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_159", "fac_kingdom_9"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_160", "fac_kingdom_9"),
 	  #HRE Addition
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_67", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_152", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_161", "fac_kingdom_3"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_163", "fac_kingdom_3"),
 	  #Spanish Bourbon
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_81", "fac_kingdom_6"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_82", "fac_kingdom_6"),
@@ -1086,10 +1102,14 @@ scripts = [
 	  #Poland
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_68", "fac_kingdom_11"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_69", "fac_kingdom_11"),
-	  (call_script, "script_give_center_to_faction_aux", "p_castle_70", "fac_kingdom_11"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_71", "fac_kingdom_11"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_72", "fac_kingdom_11"),
-	  (call_script, "script_give_center_to_faction_aux", "p_castle_73", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_153", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_154", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_155", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_156", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_157", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_63_new", "fac_kingdom_11"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_73_new", "fac_kingdom_11"),
 	  #Russia
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_74", "fac_kingdom_12"),
@@ -1122,6 +1142,7 @@ scripts = [
 	  #Polish Additions
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_102", "fac_kingdom_11"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_103", "fac_kingdom_11"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_144", "fac_kingdom_11"),
 	  #Russian Additions
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_104", "fac_kingdom_12"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_105", "fac_kingdom_12"),
@@ -1134,6 +1155,7 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_110", "fac_kingdom_3"),
 	  #Bavaria Addtion
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_111", "fac_kingdom_4"),
+	  (call_script, "script_give_center_to_faction_aux", "p_castle_162", "fac_kingdom_4"),
 	  #French Addtion
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_112", "fac_kingdom_1"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_113", "fac_kingdom_1"),
@@ -1169,7 +1191,6 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_142", "fac_kingdom_2"),
       # #HRE Addtion
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_143", "fac_kingdom_3"),
-	  (call_script, "script_give_center_to_faction_aux", "p_castle_144", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_145", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_146", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_147", "fac_kingdom_3"),
@@ -1207,7 +1228,6 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_142", "fac_kingdom_2"),
       # #HRE Addtion
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_143", "fac_kingdom_3"),
-	  (call_script, "script_give_center_to_faction_aux", "p_castle_144", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_145", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_146", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_castle_147", "fac_kingdom_3"),

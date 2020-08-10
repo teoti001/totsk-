@@ -67,8 +67,8 @@ parties = [
 ###############################################################  
   ("zendar","Zendar",pf_disabled|icon_town|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-190.27,-26.94),[]),
 
-  ("town_1","Munich",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.6673,-31.7728),[], 170),
-  ("town_2","Donauworth",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.5517,-4.04044),[], 120),
+  ("town_1","Munich",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-22.62,-59.4),[], 170),                            #[swycartographr] prev. coords: (-31.6673, -31.7728) #[swycartographr] prev. coords: (-28.1, -31.86)
+  ("town_2","Donauworth",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-25.98,-41.39),[], 120),                    #[swycartographr] prev. coords: (-33.63, -21.46) #[swycartographr] prev. coords: (-31.5517, -4.04044) #[swycartographr] prev. coords: (-35.01, -22.33) #[swycartographr] prev. coords: (-30.38, -42.79)
   ("town_3","Amsterdam",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-113.207,47.6572),[], 80),
   ("town_4","Lyon",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-143.206,-85.1108),[], 290),
   ("town_5","Den_Haag",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-117.765,43.6168),[], 90),
@@ -77,16 +77,17 @@ parties = [
   
   ("town_8","London", icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-167.303,62.3059),[], 175),
   ("town_9","Edinburgh",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-189.599,159.623),[], 90),
-  ("town_10","Vienna",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.0209,-54.9977),[], 310),
+  ("town_10","Vienna",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(34.49,-48.7),[], 310),                   #[swycartographr] prev. coords: (21.0209, -54.9977) #[swycartographr] prev. coords: (36.25, -48.58)
   ("town_11","York",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-173.122,121.096),[], 150),
-  ("town_12","Nurnberg", icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.8398,-3.10152),[], 25),
+  ("town_12","Nurnberg", icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-20.86,-11.52),[], 25),                           #[swycartographr] prev. coords: (-38.8398, -3.10152) #[swycartographr] prev. coords: (-29.43, -2.31)
   ("town_13","Glasgow",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.836,157.194),[], 60),
-  ("town_14","Prague",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.87805,4.55023),[], 135),
+  ("town_14","Prague",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.69,10.38),[], 135),                      #[swycartographr] prev. coords: (3.87805, 4.55023) #[swycartographr] prev. coords: (10.78, 5.42) #[swycartographr] prev. coords: (11.33, 5.4)
+  ("town_102","Salzburg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.12,-57.81),[], 100),              #[swycartographr] prev. coords: (-13.4468, -35.6554) #[swycartographr] prev. coords: (-5.83, -41.15) #[swycartographr] prev. coords: (-6.73, -37.52)
 
   ("town_15","Groningen",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.1714,58.5642),[], 45),
   ("town_16","Brussels",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-115.587,21.5483),[], 0),
   ("town_17","Milan",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-83.093,-99.8262),[], 90),
-  ("town_18","Stuttgart",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.5167,-22.895),[], 135),
+  ("town_18","Stuttgart",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-53,-22.83),[], 135),                   #[swycartographr] prev. coords: (-54.5167, -22.895)
 
   ("town_19","Madrid", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-274.221,-146.46),[], 45),
   ("town_20","Granada", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-270.885,-201.728),[], 270),
@@ -94,7 +95,7 @@ parties = [
   ("town_22","Leon", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-280.32,-103.959),[], 225),
   
   ("town_23","Palma", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-194.719,-180.81),[], 270),
-  ("town_24","Barcelona", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.188,-150.784),[], 330),
+  ("town_24","Barcelona", icon_town_desert|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-198.85,-152.08),[], 330),               #[swycartographr] prev. coords: (-196.188, -150.784)
   ("town_25","Toulon",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-127.616,-128.905),[], 290),
   ("town_26","Luxembourg",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-94.4595,4.05665),[], 155),
   ("town_27","Cherbourg",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-198.794,15.4998),[], 240),
@@ -108,7 +109,7 @@ parties = [
   ("town_34","Cristiania",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.9698,204.76),[], 35),
   #Sweden
   ("town_35","Rostock",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18.4416,66.0698),[], 120),
-  ("town_36","Stettin",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.96688,55.5957),[], 280),
+  ("town_36","Stettin",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(1.22,58.65),[], 280),                       #[swycartographr] prev. coords: (5.96688, 55.5957)
   ("town_37","Gothenburg",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.6025,151.911),[], 235),
   ("town_38","Stockholm",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(70.001,192.05),[], 40),
   ("town_39","Abo",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(118.156,198.336),[], 80),
@@ -117,21 +118,28 @@ parties = [
   ("town_93","Malmo",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.2904,94.7743),[], 110),
   ("town_94","Karlskrona",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(30.469,110.718),[], 200),
   #Prussia
-  ("town_41","Berlin",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.88546,43.4355),[], 90),
+  ("town_41","Berlin",     icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.51,45.34),[], 90),                          #[swycartographr] prev. coords: (-3.88546, 43.4355)
   ("town_42","Koenigsberg",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(89.3638,77.0971),[], 155),
   ("town_43","Memel",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(108.044,88.1464),[], 40),
+  ("town_99","Kolberg",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(30.46,68.48),[], 40),                           #[swycartographr] prev. coords: (109.044, 88.1464) #[swycartographr] prev. coords: (26.72, 67.77)
+  ("town_100","Landberg",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.69,46.9),[], 40),                           #[swycartographr] prev. coords: (12.29, 52.05) #[swycartographr] prev. coords: (109.044, 88.1464) #[swycartographr] prev. coords: (5.07, 35.31) #[swycartographr] prev. coords: (17.13, 51.03) #[swycartographr] prev. coords: (16.78, 46.87)
+  ("town_101","Frankfurt_am_der_Oder",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.08,40.11),[], 40),             #[swycartographr] prev. coords: (-1.83, 39.52) #[swycartographr] prev. coords: (109.044, 88.1464)
   #French
   ("town_44","Besancon",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-119.758,-66.2757),[], 40),
   #HRE Additions
   ("town_45","Torino",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-100.546,-98.0758),[], 190),
-  ("town_46","Brno",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.8459,-12.0636),[], 230),
+  ("town_46","Brno",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(38.67,-7),[], 230),                         #[swycartographr] prev. coords: (21.8459, -12.0636)
 
 
   #Poland-Saxony-Lithuania
-  ("town_47","Dresden",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.6676,34.3243),[], 10),
-  ("town_48","Lodz",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(59.5778,44.9329),[], 80),
+  ("town_47","Dresden",   icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.76,21.59),[], 10),                    #[swycartographr] prev. coords: (-10.6676, 34.3243)
+  ("town_48","Torun",  icon_town_steppe|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.7554,44.3724),[], 80),
   ("town_49","Warsaw",   icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(92.3283,36.9978),[], 223),
-  ("town_50","Vilnius",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(157.77,87.36),[], 133),
+  ("town_50","Wilno",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(157.77,87.36),[], 133),
+  ("town_95","Posen",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(32.93,41.63),[], 133),                             #[swycartographr] prev. coords: (40.4515, 51.8873) #[swycartographr] prev. coords: (38.62, 39.15) #[swycartographr] prev. coords: (38.57, 39.8)
+  ("town_96","Krakow",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(75.96,-2.99),[], 133),                            #[swycartographr] prev. coords: (71.4583, 2.54989)
+  ("town_97","Danzig",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.0098,67.0746),[], 133),
+  ("town_98","Elblag",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(80.3297,68.5319),[], 133),
   #Russia
   ("town_51","Nizhiny_Novgorod",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(365.135,135.894),[], 120),
   ("town_52","Moskow",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(314.492,129.279),[], 280),
@@ -159,7 +167,7 @@ parties = [
   ("town_69","Nicosia",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(277.315,-295.754),[], 140),
   
   #Poland Addition
-  ("town_70","Lemberg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(92.3294,1.5943),[], 140),
+  ("town_70","Lemberg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(123.23,-8.83),[], 140),                          #[swycartographr] prev. coords: (117.28, -6.89) #[swycartographr] prev. coords: (117.51, -11.9598) #[swycartographr] prev. coords: (124.81, -6.68)
   #French Addition
   ("town_71","Avignon",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-145.673,-108.233),[], 140),
   ("town_72","Perpignan",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-180.571,-133.627),[], 140),
@@ -169,7 +177,7 @@ parties = [
   ("town_76","Le Mans",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-178.081,-24.533),[], 140),
   ("town_77","Alencon",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-177.557,-10.5467),[], 140),
   ("town_78","Roen",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-156.011,7.47634),[], 140),
-  ("town_79","Nancy",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.9788,-19.4391),[], 140),
+  ("town_79","Nancy",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.7,-21.12),[], 140),                            #[swycartographr] prev. coords: (-93.9788, -19.4391)
   # #Great Britain Addition
   ("town_80","Cork",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-271.05,104.135),[], 140),
   ("town_81","Limerick",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-265.165,118.677),[], 140),
@@ -182,28 +190,30 @@ parties = [
   ("town_88","Norwich",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-141.855,80.9416),[], 140),
   # #HRE Addition
   ("town_89","Oldenburg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.6315,57.7049),[], 140),
-  ("town_90","Erfurt",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-25.7236,26.465),[], 140),
+  ("town_90","Erfurt",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.15,14.86),[], 140),                           #[swycartographr] prev. coords: (-25.7236, 26.465) #[swycartographr] prev. coords: (-31.81, 21.21)
   ("town_91","Munster",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.4491,51.7694),[], 140),
+  ("town_103","Mainz ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.53,4.71),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98) #[swycartographr] prev. coords: (-30.75, -3.52)
+
   
 #   Aztaq_Castle       
 #  Malabadi_Castle
   ("castle_1","Woerden_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-108.73,46.1097),[],50),
-  ("castle_2","Pozsony_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(10.9672,-52.3101),[],75),
+  ("castle_2","Baden_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.85,-26.07),[],75),                #[swycartographr] prev. coords: (10.9672, -52.3101) #[swycartographr] prev. coords: (25.22, -29.96)
   ("castle_3","Plymouth_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-236.862,51.1815),[],100),
   ("castle_4","Dundee_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-243.228,149.459),[],180),
-  ("castle_5","Ansbach_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.2061,-18.2946),[],90),
+  ("castle_5","Ansbach_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.92,-16.67),[],90),                 #[swycartographr] prev. coords: (-40.2061, -18.2946) #[swycartographr] prev. coords: (-43.54, -7.5) #[swycartographr] prev. coords: (-39.11, -7.27)
   ("castle_6","Tours_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-182.57,-36.7292),[],55),
-  ("castle_7","Budapest_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.3822,-39.0506),[],45),
+  ("castle_7","Budapest_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(54.45,-63.91),[],45),               #[swycartographr] prev. coords: (47.3822, -39.0506)
   ("castle_8","Belfast_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-229.552,144.112),[],30),
   ("castle_9","Nijmegen_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.5982,44.1434),[],100),
   ("castle_10","Schnelleberg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.3595,32.9159),[],110),
-  ("castle_11","Regensburg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.845,-12.6693),[],75),
-  ("castle_12","Augsburg_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.992,-29.1438),[],95),
-  ("castle_13","Metz_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-93.9865,-4.49407),[],115),
+  ("castle_11","Regensburg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.34,-19.02),[],75),           #[swycartographr] prev. coords: (-21.845, -12.6693) #[swycartographr] prev. coords: (-17.12, -11.73) #[swycartographr] prev. coords: (-8.98, -18.84) #[swycartographr] prev. coords: (-4.96, -20.01)
+  ("castle_12","Augsburg_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.54,-54.72),[],95),              #[swycartographr] prev. coords: (-41.992, -29.1438) #[swycartographr] prev. coords: (-38.2, -30.29) #[swycartographr] prev. coords: (-32.36, -55.65)
+  ("castle_13","Metz_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.99,-12.68),[],115),                #[swycartographr] prev. coords: (-93.9865, -4.49407)
   ("castle_14","Enschede_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-86.9798,49.1508),[],90),
   ("castle_15","Maastricht_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.5975,31.7443),[],235),
   ("castle_16","Breda_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.522,36.8457),[],45),
-  ("castle_17","Linz_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.87046,-20.7951),[],15),
+  ("castle_17","Linz_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(14.22,-46.55),[],15),                   #[swycartographr] prev. coords: (6.87046, -20.7951) #[swycartographr] prev. coords: (4.67, -30.98) #[swycartographr] prev. coords: (11.43, -24.56) #[swycartographr] prev. coords: (16.39, -46.78)
   ("castle_18","Nottingham_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-180.171,95.4672),[],300),
   ("castle_19","Inverness_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.386,191.187),[],280),
   ("castle_20","Liege_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-100.587,16.203),[],260),
@@ -212,18 +222,18 @@ parties = [
   ("castle_23","Bourges_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-161.125,-52.9131),[],80),
   ("castle_24","Caen_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-186.691,3.82614),[],260),
   ("castle_25","Dijon_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-127.666,-47.7922),[],260),
-  ("castle_26","Strasbourg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-101.033,-40.1815),[],260),
+  ("castle_26","Strasbourg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-69.12,-28.47),[],260),          #[swycartographr] prev. coords: (-101.033, -40.1815)
   ("castle_27","Brest_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-247.198,-2.12693),[],260),
   ("castle_28","Eindhoven_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-103.965,32.1995),[],260),
 
   ("castle_29","Liverpool_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-198.883,109.115),[],280),
   ("castle_30","Frankfurt_Castle",icon_castle_d|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.6166,14.7361),[],260),
   ("castle_31","Nantes_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-217.453,-33.9235),[],260),
-  ("castle_32","Nurnberg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-30.5185,-11.9797),[],260),
+  ("castle_32","Nurnberg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.87,-9.58),[],260),             #[swycartographr] prev. coords: (-30.5185, -11.9797) #[swycartographr] prev. coords: (-30.23, -9.22)
   ("castle_33","Utrecht_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-103.585,43.3232),[],80),
-  ("castle_34","Landshut_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-26.6092,-24.2277),[],260),
+  ("castle_34","Landshut_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.01,-35.38),[],260),            #[swycartographr] prev. coords: (-26.6092, -24.2277) #[swycartographr] prev. coords: (-21.69, -23.83)
   ("castle_35","Calais_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-141.807,28.7435),[],260),
-  ("castle_36","Rosenheim_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-27.554,-34.8602),[],260),
+  ("castle_36","Rosenheim_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.51,-63.21),[],260),           #[swycartographr] prev. coords: (-27.554, -34.8602) #[swycartographr] prev. coords: (-22.31, -39.78) #[swycartographr] prev. coords: (-19.4, -39.92)
   ("castle_37","Cardiff_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-208.157,75.4115),[],260),
   ("castle_38","Zagreb_Castle",icon_castle_d|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.4967,-107.428),[],260),
   ("castle_39","Arundel_Castle",icon_castle_c|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-170.546,44.7138),[],280),
@@ -238,11 +248,11 @@ parties = [
   ("castle_47","Santiago_Castle",icon_castle_d|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-320.26,-76.3558),[],260),
   ("castle_48","Toledo_Castle",icon_castle_d|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-278.23,-152.675),[],260),
   
-  ("castle_49","Graz_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-9.94195,-88.6392),[],175),
-  ("castle_50","Debrecen_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(79.189,-41.1612),[],275),
-  ("castle_51","Szeged_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(60.1227,-68.1444),[],55),
+  ("castle_49","Graz_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.02,-74.49),[],175),                 #[swycartographr] prev. coords: (-9.94195, -88.6392) #[swycartographr] prev. coords: (13.76, -74.56)
+  ("castle_50","Debrecen_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(80.69,-63.49),[],275),             #[swycartographr] prev. coords: (79.189, -41.1612)
+  ("castle_51","Szeged_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(34.89,-66.44),[],55),                #[swycartographr] prev. coords: (60.1227, -68.1444)
   ("castle_52","Bremen_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.6638,56.1351),[],25),
-  ("castle_53","Hanover_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-49.1367,41.1665),[],15),
+  ("castle_53","Hanover_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-48.04,39.92),[],15),               #[swycartographr] prev. coords: (-49.1367, 41.1665) #[swycartographr] prev. coords: (-50.83, 41.19)
   ("castle_54","Gibraltar_Castle",icon_castle_d|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-302.014,-216.81),[],260),
   ("castle_55","Berkeley_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.016,76.1298),[],120),
   #Denmark
@@ -261,25 +271,36 @@ parties = [
   ("castle_63_new","Ventspilis",icon_castle_snow_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(107.66,119.67),[],100),
   ("castle_149","Kalmar_Castle",icon_castle_snow_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.7616,124.818),[],100),
   #Prussia
-  ("castle_64","Madgeburg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-20.4556,38.7976),[],190),
+  ("castle_64","Madgeburg_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-23.52,39.94),[],190),            #[swycartographr] prev. coords: (-20.4556, 38.7976)
   ("castle_65","Cottbus_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.16389,33.7329),[],50),
-  ("castle_66","Halle_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.6984,32.5039),[],120),
+  ("castle_66","Halle_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-19.98,28.3),[],120),                #[swycartographr] prev. coords: (-15.6984, 32.5039) #[swycartographr] prev. coords: (-21.03, 32.25)
+  ("castle_158","Stolpe_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.8,72.68),[],120),               #[swycartographr] prev. coords: (-11.6984, 32.5039) #[swycartographr] prev. coords: (46.15, 72.46)
+  ("castle_159","Lagow_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(12.22,39.52),[],120),                 #[swycartographr] prev. coords: (-11.6984, 32.5039) #[swycartographr] prev. coords: (14.93, 39.15) #[swycartographr] prev. coords: (8.56, 43.14) #[swycartographr] prev. coords: (9.71, 43.73)
+  ("castle_160","Pansin_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.88,57.53),[],120),               #[swycartographr] prev. coords: (-11.6984, 32.5039) #[swycartographr] prev. coords: (16.96, 52.52) #[swycartographr] prev. coords: (25.54, 55.43) #[swycartographr] prev. coords: (23.69, 57.9)
 
   
   #HRE Addition
-  ("castle_67","Olomouc_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(33.1535,-5.77538),[],120),
+  ("castle_67","Olomouc_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(54.76,-1.83),[],120),               #[swycartographr] prev. coords: (33.1535, -5.77538)
   ("castle_81","Messina_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.9333,-248.364),[],190),
   ("castle_82","Bari_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.48103,-201.344),[],50),
   ("castle_83","Pescara_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-13.6657,-168.016),[],120),
+  ("castle_161","Innsbruck",  icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.35,-68.62),[], 170),              #[swycartographr] prev. coords: (-34.98, -49.37)
   
   #Poland-Saxony-Lithuania
-  ("castle_68","Leipzig_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.20,33.51),[],235),
-  ("castle_69","Danzig_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(69.0098,67.0746),[],45),
-  ("castle_70","Krakow_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.4583,2.54989),[],15),
+  ("castle_68","Leipzig_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.20,26.42),[],235),              #[swycartographr] prev. coords: (-14.78, 33.51) #[swycartographr] prev. coords: (-14.2, 25.66)
+  ("castle_69","Malbork_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(75.66,62.36),[],45),                #[swycartographr] prev. coords: (72.1104, 65.2522)
+  ("castle_70","Ksiaz_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(29.78,15.33),[],15),                  #[swycartographr] prev. coords: (30.1597, 28.1016)
   ("castle_71","Grodno_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(127.451,57.4021),[],300),
-  ("castle_72","Lublin_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(102.606,27.531),[],280),
-  ("castle_73","Breslau_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(42.0152,37.3177),[],260),
+  ("castle_72","Lublin_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(109.53,18.69),[],280),               #[swycartographr] prev. coords: (102.606, 27.531) #[swycartographr] prev. coords: (128.45, 23.06)
+  ("castle_73","Breslau_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(41.67,20.59),[],260),                #[swycartographr] prev. coords: (47.3035, 23.5935) #[swycartographr] prev. coords: (46.3, 23.55)
+  ("castle_152","Czocha_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(14.16,27.5),[],260),                #[swycartographr] prev. coords: (20.5443, 35.0523)
+  ("castle_153","Kwidzyn_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(75.0206,54.4081),[],260),
+  ("castle_154","Nowy_Wisnicz_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(83.3437,-3.96176),[],260),
+  ("castle_155","Lidzbark_Warminski_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(108.92,64.99),[],260),  #[swycartographr] prev. coords: (93.1514, 64.4073) #[swycartographr] prev. coords: (101.19, 61.07) #[swycartographr] prev. coords: (102.95, 62)
+  ("castle_156","Nidzica_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(91.35,56.56),[],260),  #[swycartographr] prev. coords: (93.1514, 64.4073) #[swycartographr] prev. coords: (101.19, 61.07) #[swycartographr] prev. coords: (89.3, 58.18)
+  ("castle_157","Moszna_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.93,3.08),[],260),  #[swycartographr] prev. coords: (93.1514, 64.4073) #[swycartographr] prev. coords: (101.19, 61.07) #[swycartographr] prev. coords: (89.3, 58.18) #[swycartographr] prev. coords: (93.35, 56.56)
   ("castle_73_new","Birzai",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(137.74,97.60),[],260),
+  ("castle_144","Zwickau",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.9,16.06),[],140),                    #[swycartographr] prev. coords: (-12.99, 19.95) #[swycartographr] prev. coords: (-17.9748, 24.2356) #[swycartographr] prev. coords: (-16.16, 19.64) #[swycartographr] prev. coords: (-14.16, 18.29)
   
   #Russia
   ("castle_74","Pskov_Castle",icon_castle_a|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(184.316,132.032),[],50),
@@ -328,7 +349,7 @@ parties = [
   #HRE
   ("castle_110","Kassel_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.8931,30.2051),[],140),
   #Bavaria
-  ("castle_111","Passau_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-13.0393,-20.8583),[],140),
+  ("castle_111","Passau_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(9.62,-43.43),[],140),              #[swycartographr] prev. coords: (-13.0393, -20.8583) #[swycartographr] prev. coords: (-9.37, -24.98) #[swycartographr] prev. coords: (6.69, -47.2)
   #French Additions
   ("castle_112","Troyes",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.931,-8.17736),[],140),
   ("castle_113","Biarritz",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-230.369,-98.1598),[],140),
@@ -364,11 +385,13 @@ parties = [
   ("castle_142","Ayr",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-208.503,167.29),[],140),
   # #HRE Additions
   ("castle_143","Osnabruck",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.0652,45.3703),[],140),
-  ("castle_144","Zwickau",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-17.9748,24.2356),[],140),
-  ("castle_145","Fulda",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-43.0468,21.8657),[],140),
+  ("castle_145","Fulda",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.15,7.53),[],140),                       #[swycartographr] prev. coords: (-43.0468, 21.8657)
   ("castle_146","Krefeld",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-83.3581,26.303),[],140),
-  ("castle_147","Gottingen",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-33.4823,35.8736),[],140),
+  ("castle_147","Gottingen",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.63,25.03),[],140),                  #[swycartographr] prev. coords: (-33.4823, 35.8736) #[swycartographr] prev. coords: (-34.95, 31.87) #[swycartographr] prev. coords: (-38.23, 31.06)
   ("castle_148","Saarbrucken",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-68.3676,-7.85993),[],140),
+  ("castle_162","Bayreuth_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.75,4.45),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98)
+  ("castle_163","Wurzburg_Castle",icon_castle_b|pf_castle, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-33.2,-5.07),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683)  #[swycartographr] prev. coords: (-20.15, 18.98)
+  
   
 #     Rinimad      
 #              Rietal Derchios Gerdus
@@ -378,14 +401,15 @@ parties = [
   ("village_2", "Ramillies",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-142.943,-90.5578),[], 110),
   ("village_3", "Reims",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-127.192,-0.663814),[], 120),
   ("village_4", "Toulouse",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-189.607,-107.341),[], 130),
-  ("village_5", "Kaisheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.8644,-21.971),[], 170),
+  ("village_5", "Kaisheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-23.03,-36.16),[], 170),              #[swycartographr] prev. coords: (-30.98, -21.08) #[swycartographr] prev. coords: (-36.8644, -21.971) #[swycartographr] prev. coords: (-31.4, -21.46) #[swycartographr] prev. coords: (-26.31, -41.61)
   ("village_6", "Strasbourg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.2329,-27.9398),[], 100),
   ("village_7", "Antwerp",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-112.117,33.348),[], 110),
-  ("village_8", "Tapfheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.3964,-22.7089),[], 120),
+  ("village_8", "Garmisch-partenkirchen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-24.67,-64.4),[], 120),             #[swycartographr] prev. coords: (-36.09, -21.08) #[swycartographr] prev. coords: (-39.3964, -22.7089) #[swycartographr] prev. coords: (-36.59, -23.63) #[swycartographr] prev. coords: (-27.22, -64.91)
   ("village_9", "Leiden",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-115.778,46.2326),[], 130),
-  ("village_10","Ingolstadt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.9459,-23.9683),[], 170),
+  ("village_10","Ingolstadt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-18.65,-29.16),[], 170),           #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-28.06, -17.23) #[swycartographr] prev. coords: (-33.39, -24.08) #[swycartographr] prev. coords: (-30.72, -17.25)
+  ("village_11","Weimar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-26.64,15.04),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-26.15, 18.98)
 
-  ("village_11","Salzburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-13.4468,-35.6554),[], 100),
+  
   ("village_12","Den_Helder",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-111.345,56.1125),[], 110),
   ("village_13","Calais",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-139.856,29.7043),[], 120),
   ("village_14","Dundee",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-243.219,148.19),[], 130),
@@ -400,18 +424,18 @@ parties = [
   ("village_22","Dumfries",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-195.077,143.104),[], 110),
   ("village_23","Assen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-92.0114,57.0475),[], 120),
   ("village_24","Alkmaar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-113.046,52.1),[], 130),
-  ("village_25","Innsbruck",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-33.4151,-47.8618),[], 170),
+  ("village_25","Strakonitz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.89,-1.31),[], 130),                #[swycartographr] prev. coords: (30, 10) #[swycartographr] prev. coords: (-67.01, 7.85) #[swycartographr] prev. coords: (-0.77, -1.79) #[swycartographr] prev. coords: (4.89, -2.92)
   ("village_26","Maastricht",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.9178,29.9742),[], 170),
   ("village_27","Drachten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-99.1998,57.8),[], 170),
-  ("village_28","Pozsony",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.6629,-25.6554),[], 170),
-  ("village_29","Augsburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.5711,-30.0423),[], 170),
+  ("village_28","Koblenz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-66.15,9.14),[], 170),                #[swycartographr] prev. coords: (28.6629, -25.6554) #[swycartographr] prev. coords: (-63.09, 6.46)
+  ("village_29","Augsburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-31.41,-55.96),[], 170),             #[swycartographr] prev. coords: (-41.5711, -30.0423) #[swycartographr] prev. coords: (-39.53, -31.79) #[swycartographr] prev. coords: (-31.55, -53.94)
 
-  ("village_30","Wettstetten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.1513,-24.4981),[], 170),
-  ("village_31","Hochstadt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-41.9976,1.11683),[], 100),
+  ("village_30","Wettstetten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.85,-26.87),[], 170),           #[swycartographr] prev. coords: (-34.77, -12.91) #[swycartographr] prev. coords: (-32.1513, -24.4981) #[swycartographr] prev. coords: (-32.75, -14.9)
+  ("village_31","Hochstadt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-23.96,-7.26),[], 100),              #[swycartographr] prev. coords: (-41.9976, 1.11683) #[swycartographr] prev. coords: (-32.41, 1.74) #[swycartographr] prev. coords: (-31.14, -4.85)
   ("village_32","Liege",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-102.451,15.2311),[], 110),
   ("village_33","Marseilles",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-136.073,-122.458),[], 120),
   ("village_34","Caen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-185.358,2.80491),[], 130),
-  ("village_35","Blenheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-46.8683,-21.1606),[], 170),
+  ("village_35","Blenheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-33.52,-45.43),[], 170),             #[swycartographr] prev. coords: (-39.17, -25.9) #[swycartographr] prev. coords: (-46.8683, -21.1606) #[swycartographr] prev. coords: (-40.43, -26.03) #[swycartographr] prev. coords: (-35.49, -46.01)
   ("village_36","Schnellenberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.4292,38.8317),[], 170),
   ("village_37","Bergamo",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.9806,-94.8058),[], 170),
   ("village_38","La_Rochelle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-216.954,-51.5584),[], 170),
@@ -420,27 +444,27 @@ parties = [
 
   ("village_41","Frankfurt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.8484,13.6843),[], 100),
   ("village_42","Como",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-85.405,-95.0474),[], 110),
-  ("village_43","Durlach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.6889,-21.065),[], 120),
-  ("village_44","Pilsen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.87484,1.14696),[], 130),
-  ("village_45","Linz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.16436,-19.5926),[], 170),
+  ("village_43","Durlach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-59.29,-17.4),[], 120),               #[swycartographr] prev. coords: (-60.6889, -21.065)
+  ("village_44","Pilsen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(4.08,7.83),[], 130),                  #[swycartographr] prev. coords: (-3.87484, 1.14696) #[swycartographr] prev. coords: (-3.05, 5.99) #[swycartographr] prev. coords: (0.09, 5.05) #[swycartographr] prev. coords: (0.01, 8.45) #[swycartographr] prev. coords: (3.04, 9.72)
+  ("village_45","Linz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(18.22,-50.06),[], 170),                     #[swycartographr] prev. coords: (4.16436, -19.5926) #[swycartographr] prev. coords: (4.9, -33.2) #[swycartographr] prev. coords: (7.89, -26.99) #[swycartographr] prev. coords: (19.62, -47.36)
   ("village_46","Zwolle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-97.9668,49.1438),[], 170),
   ("village_47","Leeuwarden",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.911,59.4896),[], 170),
   ("village_48","Orleans",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-145.463,-27.6848),[], 170),
   ("village_49","Berwick",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-177.891,156.772),[], 10),
   ("village_50","Inverness",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-196.192,192.431),[], 170),
 
-  ("village_51","Rosenheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-28.5225,-36.1512),[], 100),
+  ("village_51","Rosenheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.1,-61.64),[], 100),            #[swycartographr] prev. coords: (-28.5225, -36.1512) #[swycartographr] prev. coords: (-19.48, -39.78) #[swycartographr] prev. coords: (-18.46, -38.46)
   ("village_52","Koln",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.5974,14.0499),[], 110),
   ("village_53","Bourges",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-160.428,-53.8981),[], 120),
-  ("village_54","Metz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-91.6583,-6.00758),[], 130),
+  ("village_54","Metz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-87.77,-14.64),[], 130),                 #[swycartographr] prev. coords: (-91.6583, -6.00758)
   ("village_55","Tours",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-181.37,-38.9938),[], 170),
-  ("village_56","Oberglauheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-40.9486,-20.903),[], 170),
+  ("village_56","Oberglauheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.87,-42.22),[], 170),          #[swycartographr] prev. coords: (-38.1, -23.06) #[swycartographr] prev. coords: (-40.9486, -20.903) #[swycartographr] prev. coords: (-40.41, -20.7) #[swycartographr] prev. coords: (-33.13, -41.27) #[swycartographr] prev. coords: (-37.76, -43.15)
   ("village_57","Ostend",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-127.677,34.7285),[], 170),
   ("village_58","Kilmarnock",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-210.413,155.271),[], 170),
   ("village_59","Utrecht",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-102.762,42.0382),[], 170),
   ("village_60","Limoges",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-187.155,-59.1815),[], 170),
 
-  ("village_61","Huttenbach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.6692,0.183478),[], 100),
+  ("village_61","Huttenbach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.65,-6.68),[], 100),            #[swycartographr] prev. coords: (-34.6692, 0.183478) #[swycartographr] prev. coords: (-23.13, -0.11) #[swycartographr] prev. coords: (-19.62, -7.67)
   ("village_62","Leeds",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-179.781,117.547),[], 100),
   ("village_63","Brest",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-245.505,-3.18475),[], 100),
   ("village_64","Eindhoven",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-103.675,30.7873),[], 100),
@@ -448,21 +472,21 @@ parties = [
   ("village_66","Dunfermline",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-191.489,162.669),[], 100),
   ("village_67","Cardiff",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-206.373,74.8346),[], 100),
   ("village_68","Rotterdam",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-112.928,40.2454),[], 100),
-  ("village_69","Regensburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.8244,-14.6734),[], 100),
+  ("village_69","Regensburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.37,-18.98),[], 100),           #[swycartographr] prev. coords: (-21.8244, -14.6734) #[swycartographr] prev. coords: (-15.14, -12.31) #[swycartographr] prev. coords: (-11.22, -18.09) #[swycartographr] prev. coords: (-6.73, -19.14)
   ("village_70","Woerden",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-108.841,44.462),[], 100),
 
   ("village_71","Oudenaarde",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-122.906,27.4147),[], 20),
   ("village_72","Troyes",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-132.224,-8.94773),[], 60),
   ("village_73","Hoorn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-108.012,53.3503),[], 100),
   ("village_74","Margate",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-145.084,49.0956),[], 15),
-  ("village_75","Budapest",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(49.0314,-40.8204),[], 10),
-  ("village_76","Heilbronn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.6556,-18.9394),[], 35),
-  ("village_77","Landshut",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-26.0151,-25.4037),[], 160),
+  ("village_75","Budapest",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(51.9,-65.53),[], 10),           #[swycartographr] prev. coords: (49.0314, -40.8204)
+  ("village_76","Heilbronn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-46.7,-15.7),[], 35),               #[swycartographr] prev. coords: (-54.6556, -18.9394)
+  ("village_77","Landshut",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.27,-37.23),[], 160),             #[swycartographr] prev. coords: (-26.0151, -25.4037) #[swycartographr] prev. coords: (-21.71, -26.03) #[swycartographr] prev. coords: (-15.8, -34.07)
   ("village_78","Arnhem",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.5573,46.2656),[], 180),
-  ("village_79","Ameland",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.4483,14.5436),[], 0),
-  ("village_80","Ansbach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-39.9935,-19.8134),[], 40),
+  ("village_79","Ameland",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-62.88,19.02),[], 0),                 #[swycartographr] prev. coords: (-61.4483, 14.5436)
+  ("village_80","Ansbach",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-33.02,-18.23),[], 40),                  #[swycartographr] prev. coords: (-39.9935, -19.8134) #[swycartographr] prev. coords: (-43.7, -9.4) #[swycartographr] prev. coords: (-39.64, -9.24)
 
-  ("village_81","Buxheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-36.0939,-14.8487),[], 20),
+  ("village_81","Buxheim",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-43.1,-64.32),[], 20),               #[swycartographr] prev. coords: (-34.28, -17.73) #[swycartographr] prev. coords: (-36.0939, -14.8487) #[swycartographr] prev. coords: (-34.48, -20.09) #[swycartographr] prev. coords: (-30.51, -37.69)
   ("village_82","Namur",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-110.776,18.8035),[], 60),
   ("village_83","Le Havre",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-176.925,6.0192),[], 55),
   ("village_84","Hilversum",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-104.271,46.3472),[], 15),
@@ -510,13 +534,13 @@ parties = [
   ("village_121","Birmingham",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-191.772,93.2129),[], 120),
   ("village_122","Bristol",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-199.568,70.6696),[], 100),
   ("village_123","Girona",  icon_village_c|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-191.019,-147.774),[], 15),
-  ("village_124","Saragossa",  icon_village_c|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-228.753,-136.654),[], 10),
+  ("village_124","Saragossa",  icon_village_c|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-229.63,-142.03),[], 10),          #[swycartographr] prev. coords: (-228.753, -136.654)
   ("village_125","Tarragona",  icon_village_c|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-205.226,-154.412),[], 35),
   ("village_126", "Evenos",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-127.385,-124.957),[], 100),
   ("village_127", "La_Garde",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-125.254,-127.649),[], 110),
   ("village_128", "Olioules",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-129.458,-127.576),[], 120),
   
-  ("village_129", "Kirchberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.8967,10.9733),[], 100),
+  ("village_129", "Kirchberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-10.67,13.99),[], 100),           #[swycartographr] prev. coords: (-15.8967, 10.9733)
   ("village_130", "Strassen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.6412,7.67604),[], 110),
   ("village_131", "Cessange",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-96.6667,1.45659),[], 120),
   
@@ -530,15 +554,15 @@ parties = [
   
   ("village_138","Moribor",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(14.2321,-94.2383),[], 100),
   ("village_139","Rijeka",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(11.9343,-118.991),[], 110),
-  ("village_140","Klagenfurt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(0.527537,-71.4187),[], 120),
+  ("village_140","Klagenfurt",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(2.34,-80.89),[], 120),            #[swycartographr] prev. coords: (0.527537, -71.4187) #[swycartographr] prev. coords: (0.87, -84.54)
   
   ("village_141","Stade",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.2411,60.1935),[], 100),
   ("village_142","Ahrensburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.7247,59.5623),[], 110),
-  ("village_143","Hartberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.2762,-68.8226),[], 120),
+  ("village_143","Hartberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.36,-66.86),[], 120),             #[swycartographr] prev. coords: (16.2762, -68.8226)
   
   ("village_144","Mako",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(55.485,-54.1919),[], 100),
   ("village_145","Zeven",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-50.5965,54.3966),[], 110),
-  ("village_146","Braunschweig",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-44.1258,46.9523),[], 120),
+  ("village_146","Braunschweig",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.71,36.42),[], 120),         #[swycartographr] prev. coords: (-44.1258, 46.9523)
   #New as of 0.180
   #Denmark/Norway
   ("village_147","Oedense",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.9735,81.6472),[], 80),
@@ -558,7 +582,7 @@ parties = [
   ("village_157","Stralsund",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.11995,65.6563),[], 280),
   ("village_158","Sassnitz",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-3.8055,68.651),[], 35),
   
-  ("village_159","Falkensee",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-9.0349,46.7147),[], 20),
+  ("village_159","Falkensee",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.29,44.68),[], 20),        #[swycartographr] prev. coords: (-9.0349, 46.7147)
   ("village_160","Pasewalk",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.493578,55.1104),[], 120),
   ("village_161","Halmstad",  icon_village_snow_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.8929,125.384),[], 180),
   
@@ -589,15 +613,22 @@ parties = [
   
   
   #Prussia
-  ("village_174","Potsdam",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.40974,40.6131),[], 95),
-  ("village_175","Oranienburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-4.24629,47.2108),[], 45),
+  ("village_174","Potsdam",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.77,42.24),[], 95),                #[swycartographr] prev. coords: (-6.40974, 40.6131)
+  ("village_175","Oranienburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-7.85,48.63),[], 45),            #[swycartographr] prev. coords: (-4.24629, 47.2108)
   ("village_176","Zimmerbude",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(86.1624,79.4747),[], 220),
   ("village_177","Neuhausen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(92.4461,75.0959),[], 240),
   ("village_178","Libau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(102.414,99.675),[], 65),
   ("village_179","Krottingen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(105.47,93.29),[], 30),
-  ("village_180","Magdeberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-20.9243,37.5523),[], 30),
+  ("village_180","Magdeberg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-20.47,39.08),[], 30),             #[swycartographr] prev. coords: (-20.9243, 37.5523) #[swycartographr] prev. coords: (-21.42, 36.98)
   ("village_181","Cottbus",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.85393,32.347),[], 30),
-  ("village_182","Halle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-16.3998,35.0926),[], 30),
+  ("village_182","Halle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-21.86,28.3),[], 30),                 #[swycartographr] prev. coords: (-16.3998, 35.0926) #[swycartographr] prev. coords: (-20.87, 33.69)
+  ("village_431","Koslin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(36.13,74.9),[], 30),                  #[swycartographr] prev. coords: (-6.3998, 35.0926)
+  ("village_432","Stolpe",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.34,70.28),[], 30),                 #[swycartographr] prev. coords: (-6.3998, 35.0926)
+  ("village_433","Belgard",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(47.46,77.36),[], 30),                #[swycartographr] prev. coords: (-6.3998, 35.0926)
+  ("village_434","Neustettin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(16.98,59.49),[], 30),             #[swycartographr] prev. coords: (-6.3998, 35.0926)
+  ("village_435","Stargard",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.1,50.6),[], 30),               #[swycartographr] prev. coords: (-6.3998, 35.0926) #[swycartographr] prev. coords: (13.28, 51.78) #[swycartographr] prev. coords: (11.84, 52.81)
+  ("village_436","Treptow",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(21.86,67.04),[], 30),                #[swycartographr] prev. coords: (-6.3998, 35.0926) #[swycartographr] prev. coords: (22.76, 67.34)
+  ("village_437","Dressen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(6.32,44.73),[], 30),                #[swycartographr] prev. coords: (-6.3998, 35.0926) #[swycartographr] prev. coords: (22.76, 67.34) #[swycartographr] prev. coords: (6.36, 46.4)
   ("village_182_new","Tisit",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(112.08,81.58),[], 30),
   
   #France Additions
@@ -607,10 +638,10 @@ parties = [
   #HRE Additions
   ("village_185","Castellemonte",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-98.7049,-92.5798),[], 40),
   ("village_186","Novara",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-89.3113,-99.8135),[], 110),
-  ("village_187","Vyskov",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(26.7876,-9.34508),[], 55),
-  ("village_188","Jihlava",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.2462,-8.534),[], 140),
-  ("village_189","Zlin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(30.5029,-12.1103),[], 300),
-  ("village_190","Olomouc",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(34.3978,-6.64193),[], 15),
+  ("village_187","Vyskov",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.57,-3.03),[], 55),                 #[swycartographr] prev. coords: (26.7876, -9.34508)
+  ("village_188","Jihlava",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(28.22,-2.11),[], 140),              #[swycartographr] prev. coords: (13.2462, -8.534) #[swycartographr] prev. coords: (16.24, -10.18)
+  ("village_189","Zlin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(55.12,-14.23),[], 300),                  #[swycartographr] prev. coords: (30.5029, -12.1103) #[swycartographr] prev. coords: (50.89, -9.31)
+  ("village_190","Olomouc",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(52.37,-1.44),[], 15),                #[swycartographr] prev. coords: (34.3978, -6.64193)
   
   ("village_191","Salerno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-30.1715,-191.93),[], 40),
   ("village_192","Benevento",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.7524,-179.401),[], 110),
@@ -624,21 +655,36 @@ parties = [
   ("village_200","Pescara",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-14.3358,-169.722),[], 15),
   
   #Poland-Saxony-Lithuania
-  ("village_201","Bischofswerda",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-6.13971,33.49),[], 40),
-  ("village_202","Neustadt_in_Sachsen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-5.59218,31.4201),[], 110),
-  ("village_203","Kutno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(58.5164,48.5344),[], 55),
-  ("village_204","Tomaszow-Mazowiecki",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(64.4272,42.3053),[], 140),
-  ("village_205","Radom",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(95.6756,31.3592),[], 300),
-  ("village_206","Siedlce",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(95.6756,31.3592),[], 15),
-  ("village_207","Lublin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(102.938,26.1815),[], 40),
-  ("village_208","Plock",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(60.4979,52.6564),[], 110),
+  ("village_201","Bischofswerda",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-0.64,24),[], 40),             #[swycartographr] prev. coords: (-6.13971, 33.49)
+  ("village_202","Neustadt_in_Sachsen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(5.01,22.06),[], 110),    #[swycartographr] prev. coords: (-5.59218, 31.4201)
+  ("village_203","Kutno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(81.2532,37.008),[], 55),
+  ("village_204","Tomaszow-Mazowiecki",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(73.9985,22.0109),[], 140),
+  ("village_205","Radom",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(86.43,19.57),[], 300),                 #[swycartographr] prev. coords: (95.6756, 31.3592)
+  ("village_206","Siedlce",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(103.82,19.95),[], 15),               #[swycartographr] prev. coords: (95.6756, 31.3592) #[swycartographr] prev. coords: (104.27, 22.32)
+  ("village_207","Lublin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(112.42,17.14),[], 40),                #[swycartographr] prev. coords: (102.938, 26.1815) #[swycartographr] prev. coords: (129.68, 21.81)
+  ("village_208","Plock",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(83.4096,40.7049),[], 110),
   ("village_209","Kaunas",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(142.21,89.73),[], 55),
   ("village_210","Siauliai",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(127.15,97.12),[], 140),
-  ("village_211","Leipzig",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-12.92,32.82),[], 300),
-  ("village_212","Elbing ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(72.1104,65.2522),[], 15),
-  ("village_213","Krakow",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(71.195,0.741454),[], 15),
-  ("village_214","Breslau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.2693,36.0985),[], 40),
-  ("village_215","Grodno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(131.763,56.7148),[], 55),
+  ("village_211","Leipzig",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-11.56,25.36),[], 300),              #[swycartographr] prev. coords: (-12.92, 32.82) #[swycartographr] prev. coords: (-15.32, 25.22)
+  ("village_212","Marienburg ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(73.22,62.05),[], 15),            #[swycartographr] prev. coords: (72.1104, 65.2522)
+  ("village_213","Katowice",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(64.66,-2.12),[], 15),                #[swycartographr] prev. coords: (71.195, 0.741454) #[swycartographr] prev. coords: (62.15, 0.63)
+  ("village_214","Breslau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(43.56,18.99),[], 40),                 #[swycartographr] prev. coords: (43.2693, 36.0985) #[swycartographr] prev. coords: (49.02, 24.3)
+  ("village_215","Grodno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(132.06,54.8),[], 55),                 #[swycartographr] prev. coords: (131.763, 56.7148)
+  ("village_414","Gnesen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(48.94,42.5),[], 55),                 #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (55.49, 49.79)
+  ("village_415","Konin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.92,38.64),[], 55),                  #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (51.21, 37.21)
+  ("village_416","Piotrkow",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(61.77,18.59),[], 55),               #[swycartographr] prev. coords: (131.763, 56.7148)
+  ("village_417","Wielun",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(53.01,23.52),[], 55),                 #[swycartographr] prev. coords: (131.763, 56.7148)
+  ("village_418","Leszno",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(44.17,29.61),[], 55),                #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (104.89, 15.35)
+  ("village_419","Kalisz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(62,28.55),[], 55),                 #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (47.99, 30.83)
+  ("village_420","Pila",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(42.63,51.18),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (43.53, 49.53) #[swycartographr] prev. coords: (50.48, 53.38) #[swycartographr] prev. coords: (43.13, 52.65)
+  ("village_421","Bygoszcz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(67.65,50.64),[], 55),               #[swycartographr] prev. coords: (131.763, 56.7148)
+  ("village_422","Choince",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(83.83,28.21),[], 55),                #[swycartographr] prev. coords: (131.763, 56.7148)
+  ("village_423","Opole",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(60.28,6.01),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35)
+  ("village_424","Olsztyn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(92,49.63),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35)
+  ("village_425","Gdynia",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(61.96,73.84),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35) #[swycartographr] prev. coords: (94, 49.63) #[swycartographr] prev. coords: (62.19, 72.25)
+  ("village_426","Kwidzyn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(74.65,56.37),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35) #[swycartographr] prev. coords: (94, 49.63) #[swycartographr] prev. coords: (65.19, 72.25)
+  ("village_427","Choinice",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(56.76,61.85),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35) #[swycartographr] prev. coords: (94, 49.63) #[swycartographr] prev. coords: (65.19, 72.25)
+  ("village_428","Bialystok",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(114.34,63.91),[], 55),                   #[swycartographr] prev. coords: (131.763, 56.7148) #[swycartographr] prev. coords: (60.43, 8.35) #[swycartographr] prev. coords: (94, 49.63) #[swycartographr] prev. coords: (65.19, 72.25)
   #Russia
   ("village_216", "Vladimir",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(331.666,132.4),[], 100),
   ("village_217", "Ivanovo",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(345.064,146.075),[], 110),
@@ -725,9 +771,9 @@ parties = [
   #Polish Additions
   ("village_279","Tarnopol",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(157.399,5.87191),[], 210),
   ("village_280","Czernowitz",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(153.753,-13.0312),[], 210),
-  ("village_281","Horodok",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(88.89,2.67436),[], 10),
+  ("village_281","Horodok",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(110.71,-9.2),[], 10),               #[swycartographr] prev. coords: (107.6, -9.56) #[swycartographr] prev. coords: (88.89, 2.67436) #[swycartographr] prev. coords: (114.88, -9.71)
   ("village_282","Rudky",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(85.3759,-4.11363),[], 145),
-  ("village_283","Olesko",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(104.333,6.19832),[], 160),
+  ("village_283","Olesko",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(138.41,-20.06),[], 160),               #[swycartographr] prev. coords: (129.5, -8.91) #[swycartographr] prev. coords: (104.333, 6.19832) #[swycartographr] prev. coords: (136.66, -3.53)
   
   #Russian Additions
   ("village_284","Poltava",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(231.397,7.03065),[], 210),
@@ -740,13 +786,15 @@ parties = [
   ("village_289","Jersey",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-212.272,9.21869),[], 160),
   
   #HRE Addition
-  ("village_290","Debrecen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(80.3831,-43.438),[], 160),
+  ("village_290","Debrecen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(82.77,-60.73),[], 160),             #[swycartographr] prev. coords: (80.3831, -43.438)
   ("village_291","Luneburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-42.7151,51.8243),[], 160),
-  ("village_292","Budweis",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.65823,-8.28598),[], 160),
+  ("village_292","Budweis",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(13.52,-9.62),[], 160),                #[swycartographr] prev. coords: (3.65823, -8.28598) #[swycartographr] prev. coords: (4.57, -8.16) #[swycartographr] prev. coords: (4.93, -6.63) #[swycartographr] prev. coords: (11.9, -11)
+  ("village_429","Hradec_Kralove",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(18.94,19.18),[], 160),        #[swycartographr] prev. coords: (3.65823, -8.28598) #[swycartographr] prev. coords: (11.47, 20.16) #[swycartographr] prev. coords: (10.34, 20) #[swycartographr] prev. coords: (11.34, 20.57)
+  ("village_430","Litomysl",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(35.48,8.08),[], 160),        #[swycartographr] prev. coords: (3.65823, -8.28598) #[swycartographr] prev. coords: (11.47, 20.16)
   #Bavaria
-  ("village_293","Passau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-13.1665,-22.6083),[], 120),
+  ("village_293","Passau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(7.9,-41.79),[], 120),               #[swycartographr] prev. coords: (-13.1665, -22.6083) #[swycartographr] prev. coords: (-7.17, -24.91) #[swycartographr] prev. coords: (4.77, -45.76)
   #HRE
-  ("village_294","Kassel",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.521,28.7988),[], 120),
+  ("village_294","Kassel",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.2,29.25),[], 120),                #[swycartographr] prev. coords: (-51.521, 28.7988)
   #French Addition
   ("village_295","Pau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-213.638,-105.069),[], 120),
   ("village_296","Auch",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-198.541,-104.306),[], 120),
@@ -780,7 +828,7 @@ parties = [
   
   ("village_320","Plaisir",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-147.14,-9.29652),[], 120),
   ("village_321","Troul",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-95.9925,-22.5409),[], 120),
-  ("village_322","Luneville",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.521,28.7988),[], 120),
+  ("village_322","Luneville",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-78.9,-16.66),[], 120),            #[swycartographr] prev. coords: (-51.521, 28.7988)
   ("village_323","Laon",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-125.761,7.51223),[], 120),
   ("village_324","Montauban",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-189.466,-93.1734),[], 120),
   
@@ -792,9 +840,9 @@ parties = [
   
   ("village_330","Brive-la-Gaillarde",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-177.261,-64.5447),[], 120),
   ("village_331","Gueret",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-182.775,-52.2528),[], 120),
-  ("village_332","Colmar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-67.5486,-34.2109),[], 120),
+  ("village_332","Colmar",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-71.27,-41.04),[], 120),              #[swycartographr] prev. coords: (-67.5486, -34.2109)
   ("village_333","Haguenau",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-72.676,-21.8264),[], 120),
-  ("village_334","Mulhouse",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-79.6846,-53.1532),[], 120),
+  ("village_334","Mulhouse",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-73.1,-54.42),[], 120),             #[swycartographr] prev. coords: (-79.6846, -53.1532)
   # #Great Britian Addition
   ("village_335","Killarney",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-286.62,109.624),[], 120),
   ("village_337","Listowel",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-285.079,117.289),[], 120),
@@ -856,24 +904,29 @@ parties = [
   ("village_384","Bergedorf",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-38.9456,56.0051),[], 120),
   ("village_385","Stendal",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-34.6577,45.9044),[], 120),
   
-  ("village_386","Celle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-43.1601,41.9098),[], 120),
+  ("village_386","Celle",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-43.93,42.33),[], 120),                #[swycartographr] prev. coords: (-43.1601, 41.9098)
   ("village_387","Paderborn",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-57.8813,31.8557),[], 120),
-  ("village_388","Baden Baden",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.3126,-28.9934),[], 120),
-  ("village_389","Freiburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.3679,-34.8699),[], 120),
-  ("village_390","Karlsruhe",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.1022,-2.35786),[], 120),
+  ("village_388","Baden Baden",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.77,-23.52),[], 120),         #[swycartographr] prev. coords: (-60.3126, -28.9934)
+  ("village_389","Freiburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-60.92,-41.86),[], 120),            #[swycartographr] prev. coords: (-60.3679, -34.8699)
+  ("village_390","Karlsruhe",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-61.9,-17.27),[], 120),            #[swycartographr] prev. coords: (-60.1022, -2.35786)
   
-  ("village_391","Tubingen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-56.204,-26.8703),[], 120),
-  ("village_392","Reutlingen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.165,-26.6596),[], 120),
-  ("village_393","Ulm",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-51.9204,-30.7292),[], 120),
-  ("village_394","Mayrhofen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.5917,-51.2817),[], 120),
-  ("village_395","Vocklabruck",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-8.13538,-34.2006),[], 120),
+  ("village_391","Tubingen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-58.57,-32.2),[], 120),            #[swycartographr] prev. coords: (-56.204, -26.8703) #[swycartographr] prev. coords: (-50.64, -34.57)
+  ("village_392","Reutlingen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-54.26,-33.62),[], 120),          #[swycartographr] prev. coords: (-52.165, -26.6596)
+  ("village_393","Ulm",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-45.51,-46.83),[], 120),                 #[swycartographr] prev. coords: (-51.9204, -30.7292) #[swycartographr] prev. coords: (-46.19, -28.74) #[swycartographr] prev. coords: (-43.58, -47.87) #[swycartographr] prev. coords: (-49.45, -48.21)
+  ("village_394","Mayrhofen",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-17.49,-69.54),[], 120),           #[swycartographr] prev. coords: (-32.5917, -51.2817) #[swycartographr] prev. coords: (-23.66, -49.81) #[swycartographr] prev. coords: (-25.2, -50.65) #[swycartographr] prev. coords: (-17.05, -70.38)
+  ("village_395","Vocklabruck",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(11.45,-55.19),[], 120),           #[swycartographr] prev. coords: (-8.13538, -34.2006) #[swycartographr] prev. coords: (9.05, -43.69) #[swycartographr] prev. coords: (24.87, -40.08)
   
-  ("village_396","Bad ischl",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-8.02984,-38.0973),[], 120),
-  ("village_397","Armstetten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-2.66164,-54.0451),[], 120),
-  ("village_398","Sankt Polten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(9.60047,-54.8844),[], 120),
+  ("village_396","Bad ischl",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(11.5,-63.47),[], 120),            #[swycartographr] prev. coords: (-8.02984, -38.0973) #[swycartographr] prev. coords: (-1.26, -38.27) #[swycartographr] prev. coords: (3.93, -38.9)
+  ("village_397","Armstetten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-52.35,-41.55),[], 120),          #[swycartographr] prev. coords: (-2.66164, -54.0451)
+  ("village_398","Sankt Polten",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.8,-50.12),[], 120),         #[swycartographr] prev. coords: (9.60047, -54.8844) #[swycartographr] prev. coords: (28.42, -49.91)
   ("village_399","St Martin",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(3.37249,-66.417),[], 120),
-  ("village_400","Pressburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(27.0806,-56.6461),[], 120),
-  
+  ("village_400","Pressburg",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(46.38,-53.87),[], 120),            #[swycartographr] prev. coords: (27.0806, -56.6461) #[swycartographr] prev. coords: (46.52, -54.84)
+
+  ("village_439","Wurzburg ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-35.64,-5.26),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98)
+  ("village_438","Bayreuth",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-15.47,3.04),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98)
+  ("village_440","Znojmo",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(17.93,-27.13),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683)  #[swycartographr] prev. coords: (-20.15, 18.98)
+
+ 
   ("salt_mine","Tunis_Barbary_Port",icon_village_c|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-116.547,-287.273),[]),
   ("four_ways_inn","Mostaghanem",icon_town|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-209.048,-276.128),[]),
   ("test_scene","test_scene",icon_village_a|pf_disabled|pf_is_static|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-231.355,-287.937),[]),
@@ -886,8 +939,8 @@ parties = [
   ("training_ground_1", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-139.99,-2.73515),[], 100),
   ("training_ground_2", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-168.197,67.6445),[], 100),
   ("training_ground_3", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-113.02,44.2816),[], 100),
-  ("training_ground_4", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-37.6527,-36.962),[], 100),
-  ("training_ground_5", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(15.5223,-61.5339),[], 100),
+  ("training_ground_4", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-63.05,-64.3),[], 100), #[swycartographr] prev. coords: (-37.6527, -36.962)
+  ("training_ground_5", "Training Field",  icon_training_ground|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_medium, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(66.05,-61.89),[], 100), #[swycartographr] prev. coords: (15.5223, -61.5339)
   
 
 
