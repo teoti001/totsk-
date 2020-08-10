@@ -29715,7 +29715,7 @@ scripts = [
           (faction_get_slot, ":truce_days", ":third_kingdom", ":slot_truce_days"),
           ##nested diplomacy start+ change to use constants
           #(gt, ":truce_days", 10),
-          (gt, ":truce_days", 14),
+          (gt, ":truce_days", dplmc_treaty_truce_days_half_done),
           ##nested diplomacy end+
           (val_sub, ":barrier", 1),
 
@@ -29752,7 +29752,7 @@ scripts = [
         (else_try),
           ##nested diplomacy start+ change to use constants
           #(is_between, ":truce_days", 0, 10),
-          (is_between, ":truce_days", 0, 7),#10 = halfway done with a truce
+          (is_between, ":truce_days", 0, dplmc_treaty_truce_days_half_done),#10 = halfway done with a truce
           ##nested diplomacy end+
           (ge, ":cur_relation", 10),
           (try_begin),
@@ -29773,22 +29773,22 @@ scripts = [
           (ge, ":kingdom_1_to_kingdom_2", 1),
 
           (try_begin),
-            # ##nested diplomacy start+ change to use constants
-            # #(is_between, ":truce_days", 20, 50),
-            # (is_between, ":truce_days", dplmc_treaty_trade_days_expire, dplmc_treaty_defense_days_half_done),
-            # ##nested diplomacy end+
-            # (ge, ":cur_relation", 30),
-            # (faction_slot_eq, ":cur_kingdom", slot_faction_recognized_player, 1), #recognized us
-            # (call_script, "script_add_notification_menu", "mnu_dplmc_question_alliance_offer", ":cur_kingdom", 0),
-          # (else_try),
-            # ##nested diplomacy start+ change to use constants
-            # #(is_between, ":truce_days", 0, 30), #you need a non-aggression or trade aggreement for an defensive pact
-            # (is_between, ":truce_days", 0, dplmc_treaty_trade_days_half_done),
-            # ##nested diplomacy end+
-            # (ge, ":cur_relation", 20),
-            # (faction_slot_eq, ":cur_kingdom", slot_faction_recognized_player, 1), #recognized us
-            # (call_script, "script_add_notification_menu", "mnu_dplmc_question_defensive_offer", ":cur_kingdom", 0),
-          # (else_try),
+            ##nested diplomacy start+ change to use constants
+            #(is_between, ":truce_days", 20, 50),
+            (is_between, ":truce_days", dplmc_treaty_trade_days_expire, dplmc_treaty_defense_days_half_done),
+            ##nested diplomacy end+
+            (ge, ":cur_relation", 30),
+            (faction_slot_eq, ":cur_kingdom", slot_faction_recognized_player, 1), #recognized us
+            (call_script, "script_add_notification_menu", "mnu_dplmc_question_alliance_offer", ":cur_kingdom", 0),
+          (else_try),
+            ##nested diplomacy start+ change to use constants
+            #(is_between, ":truce_days", 0, 30), #you need a non-aggression or trade aggreement for an defensive pact
+            (is_between, ":truce_days", 0, dplmc_treaty_trade_days_half_done),
+            ##nested diplomacy end+
+            (ge, ":cur_relation", 20),
+            (faction_slot_eq, ":cur_kingdom", slot_faction_recognized_player, 1), #recognized us
+            (call_script, "script_add_notification_menu", "mnu_dplmc_question_defensive_offer", ":cur_kingdom", 0),
+          (else_try),
             ##nested diplomacy start+ change to use constants
             #(is_between, ":truce_days", 0, 10),
             (is_between, ":truce_days", 0, dplmc_treaty_truce_days_half_done),
@@ -29809,20 +29809,20 @@ scripts = [
           (ge, ":kingdom_2_to_kingdom_1", 1),
 
           (try_begin),
-            # ##nested diplomacy start+ change to use constants
-            # #(is_between, ":truce_days", 20, 50),
-            # (is_between, ":truce_days", dplmc_treaty_trade_days_expire, dplmc_treaty_defense_days_half_done),
-            # ##nested diplomacy end+
-            # (ge, ":cur_relation", 30),
-            # (call_script, "script_dplmc_start_alliance_between_kingdoms", ":cur_kingdom", ":cur_kingdom_2", ":initializing_war_peace_cond"),
-          # (else_try),
-            # ##nested diplomacy start+ change to use constants
-            # #(is_between, ":truce_days", 0, 30), #you need a non-aggression or trade aggreement for an defensive pact
-            # (is_between, ":truce_days", 0, dplmc_treaty_trade_days_half_done),
-            # ##nested diplomacy end+
-            # (ge, ":cur_relation", 20),
-            # (call_script, "script_dplmc_start_defensive_between_kingdoms", ":cur_kingdom", ":cur_kingdom_2", ":initializing_war_peace_cond"),
-          #(else_try),
+            ##nested diplomacy start+ change to use constants
+            #(is_between, ":truce_days", 20, 50),
+            (is_between, ":truce_days", dplmc_treaty_trade_days_expire, dplmc_treaty_defense_days_half_done),
+            ##nested diplomacy end+
+            (ge, ":cur_relation", 30),
+            (call_script, "script_dplmc_start_alliance_between_kingdoms", ":cur_kingdom", ":cur_kingdom_2", ":initializing_war_peace_cond"),
+          (else_try),
+            ##nested diplomacy start+ change to use constants
+            #(is_between, ":truce_days", 0, 30), #you need a non-aggression or trade aggreement for an defensive pact
+            (is_between, ":truce_days", 0, dplmc_treaty_trade_days_half_done),
+            ##nested diplomacy end+
+            (ge, ":cur_relation", 20),
+            (call_script, "script_dplmc_start_defensive_between_kingdoms", ":cur_kingdom", ":cur_kingdom_2", ":initializing_war_peace_cond"),
+          (else_try),
             ##nested diplomacy start+ change to use constants
             #(is_between, ":truce_days", 0, 10),
             (is_between, ":truce_days", 0, dplmc_treaty_truce_days_half_done),
