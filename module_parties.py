@@ -192,7 +192,7 @@ parties = [
   ("town_89","Oldenburg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.6315,57.7049),[], 140),
   ("town_90","Erfurt",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.15,14.86),[], 140),                           #[swycartographr] prev. coords: (-25.7236, 26.465) #[swycartographr] prev. coords: (-31.81, 21.21)
   ("town_91","Munster",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.4491,51.7694),[], 140),
-  ("town_103","Mainz ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.53,4.71),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98) #[swycartographr] prev. coords: (-30.75, -3.52)
+  ("town_103","Mainz ",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.53,4.71),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98) #[swycartographr] prev. coords: (-30.75, -3.52)
 
   
 #   Aztaq_Castle       
