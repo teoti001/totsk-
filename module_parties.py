@@ -172,27 +172,27 @@ parties = [
   ("town_71","Avignon",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-145.673,-108.233),[], 140),
   ("town_72","Perpignan",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-180.571,-133.627),[], 140),
   ("town_73","Vichy",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-163.913,-77.0311),[], 140),
-  ("town_74","St. Etienne",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-151.079,-91.1177),[], 140),
+  ("town_74","St._Etienne",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-151.079,-91.1177),[], 140),
   ("town_75","Lourdes",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-208.234,-113.825),[], 140),
-  ("town_76","Le Mans",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-178.081,-24.533),[], 140),
+  ("town_76","Le_Mans",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-178.081,-24.533),[], 140),
   ("town_77","Alencon",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-177.557,-10.5467),[], 140),
   ("town_78","Roen",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-156.011,7.47634),[], 140),
   ("town_79","Nancy",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-81.7,-21.12),[], 140),                            #[swycartographr] prev. coords: (-93.9788, -19.4391)
   # #Great Britain Addition
-  ("town_80","Cork",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-271.05,104.135),[], 140),
-  ("town_81","Limerick",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-265.165,118.677),[], 140),
-  ("town_82","Southampton",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-183.411,47.4172),[], 140),
-  ("town_83","Canterbury",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-148.858,48.8405),[], 140),
-  ("town_84","Exeter",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-227.431,56.016),[], 140),
-  ("town_85","Oxford",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-182.674,79.7767),[], 140),
-  ("town_86","Swansea",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.645,76.7679),[], 140),
-  ("town_87","Newcastle",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-175.107,137.144),[], 140),
-  ("town_88","Norwich",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-141.855,80.9416),[], 140),
+  ("town_80","Cork", icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-271.05,104.135),[], 140),
+  ("town_81","Limerick", icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-265.165,118.677),[], 140),
+  ("town_82","Southampton",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-183.411,47.4172),[], 140),
+  ("town_83","Canterbury",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-148.858,48.8405),[], 140),
+  ("town_84","Exeter",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-227.431,56.016),[], 140),
+  ("town_85","Oxford",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-182.674,79.7767),[], 140),
+  ("town_86","Swansea",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-214.645,76.7679),[], 140),
+  ("town_87","Newcastle",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-175.107,137.144),[], 140),
+  ("town_88","Norwich",icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-141.855,80.9416),[], 140),
   # #HRE Addition
   ("town_89","Oldenburg",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-65.6315,57.7049),[], 140),
   ("town_90","Erfurt",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-32.15,14.86),[], 140),                           #[swycartographr] prev. coords: (-25.7236, 26.465) #[swycartographr] prev. coords: (-31.81, 21.21)
   ("town_91","Munster",  icon_town|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-76.4491,51.7694),[], 140),
-  ("town_103","Mainz ",  icon_village_a|pf_village, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.53,4.71),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98) #[swycartographr] prev. coords: (-30.75, -3.52)
+  ("town_103","Mainz",  icon_town_snow|pf_town, no_menu, pt_none, fac_neutral,0,ai_bhvr_hold,0,(-55.53,4.71),[], 170),                #[swycartographr] prev. coords: (-32.9459, -23.9683) #[swycartographr] prev. coords: (-20.15, 18.98) #[swycartographr] prev. coords: (-30.75, -3.52)
 
   
 #   Aztaq_Castle       
