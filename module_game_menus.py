@@ -2144,14 +2144,14 @@ game_menus = [
    (try_begin),
 	(troop_get_slot, ":spouse_or_betrothed", "trp_player", slot_troop_spouse),
 	(try_begin),
-		##diplomacy start+ Test gender with script
-		#(troop_get_type, ":is_female", "trp_player"),#<- replaced
-		(call_script, "script_cf_dplmc_troop_is_female", "trp_player"),
-		#(eq, ":is_female", 1),#<- replaced
-		##diplomacy end+
-		(str_store_string, s8, "str_husband"),
-	(else_try),
-		(str_store_string, s8, "str_wife"),
+			##diplomacy start+ Test gender with script
+			#(troop_get_type, ":is_female", "trp_player"),#<- replaced
+			(call_script, "script_cf_dplmc_troop_is_female", "trp_player"),
+			#(eq, ":is_female", 1),#<- replaced
+			##diplomacy end+
+			(str_store_string, s8, "str_husband"),
+		(else_try),
+			(str_store_string, s8, "str_wife"),
 	(try_end),
 	
 	(try_begin),
